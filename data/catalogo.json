@@ -1,244 +1,200 @@
 {
-  "version": "2.0.0",
-  "generatedFrom": "ClimbMap_Preenchido.xlsx",
+  "version": "7.1.0-final",
+  "modelo": "IDs_Competencias_na_Trilha",
+  "separadorIDs": "|",
+  "generatedFrom": "ClimbMap_Refeito.xlsx",
   "categorias": [
     {
+      "idCategoria": "CAT001",
       "nome": "Processos",
       "descricao": "",
       "icone": "",
       "ordem": 1,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idCategoria": "CAT002",
       "nome": "Sistemas",
       "descricao": "",
       "icone": "",
       "ordem": 2,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idCategoria": "CAT003",
       "nome": "Dados",
       "descricao": "",
       "icone": "",
       "ordem": 3,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idCategoria": "CAT004",
       "nome": "Cyber Segurança",
       "descricao": "",
       "icone": "",
       "ordem": 4,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idCategoria": "CAT005",
       "nome": "Liderança e Organização",
       "descricao": "",
       "icone": "",
       "ordem": 5,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     }
   ],
   "trilhas": [
     {
+      "idTrilha": "TRL024",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "nome": "SQL",
+      "nome": "Analista de Dados Junior",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0008",
+        "CMP0006",
+        "CMP0007",
+        "CMP0005"
+      ],
       "ordem": 1,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idTrilha": "TRL025",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "nome": "Python para Dados",
+      "nome": "Analista de Dados Pleno",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0003",
+        "CMP0009",
+        "CMP0010",
+        "CMP0012",
+        "CMP0004"
+      ],
       "ordem": 2,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idTrilha": "TRL026",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "nome": "Power BI",
+      "nome": "Analista de Dados Senior",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0001",
+        "CMP0002",
+        "CMP0011"
+      ],
       "ordem": 3,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
-      "categoria": "Dados",
-      "nome": "Visualização de Dados",
-      "descricao": "",
-      "ordem": 4,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Dados",
-      "nome": "Modelagem Dimensional",
-      "descricao": "",
-      "ordem": 5,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Dados",
-      "nome": "Data Warehouse e Lakehouse",
-      "descricao": "",
-      "ordem": 6,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Dados",
-      "nome": "Engenharia de Dados",
-      "descricao": "",
-      "ordem": 7,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Dados",
-      "nome": "Governança de Dados",
-      "descricao": "",
-      "ordem": 8,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Dados",
-      "nome": "Estatística para BI",
-      "descricao": "",
-      "ordem": 9,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
+      "idTrilha": "TRL027",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "nome": "Fundamentos de BPM",
+      "nome": "Analista de Processos Junior",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0016",
+        "CMP0022",
+        "CMP0021",
+        "CMP0019",
+        "CMP0017"
+      ],
       "ordem": 1,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idTrilha": "TRL028",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "nome": "Mapeamento de Processos",
+      "nome": "Analista de Processos Pleno",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0018",
+        "CMP0020",
+        "CMP0023",
+        "CMP0024",
+        "CMP0013"
+      ],
       "ordem": 2,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idTrilha": "TRL029",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "nome": "Melhoria Contínua",
+      "nome": "Analista de Processos Senior",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0014",
+        "CMP0015"
+      ],
       "ordem": 3,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
-      "categoria": "Processos",
-      "nome": "Governança e Documentação",
-      "descricao": "",
-      "ordem": 4,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Processos",
-      "nome": "Governança de Processos",
-      "descricao": "",
-      "ordem": 5,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Processos",
-      "nome": "Gestão Estratégica de Processos",
-      "descricao": "",
-      "ordem": 6,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Processos",
-      "nome": "Automatização de Processos",
-      "descricao": "",
-      "ordem": 7,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
+      "idTrilha": "TRL030",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "nome": "Fundamentos de TI",
+      "nome": "Analista de Sistemas Junior",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0025",
+        "CMP0034",
+        "CMP0028",
+        "CMP0033",
+        "CMP0029",
+        "CMP0031"
+      ],
       "ordem": 1,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idTrilha": "TRL031",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "nome": "ERP e Aplicações Corporativas",
+      "nome": "Analista de Sistemas Pleno",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0027",
+        "CMP0026",
+        "CMP0032",
+        "CMP0035",
+        "CMP0036",
+        "CMP0037"
+      ],
       "ordem": 2,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     },
     {
+      "idTrilha": "TRL032",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "nome": "Integrações e APIs",
+      "nome": "Analista de Sistemas Senior",
       "descricao": "",
+      "idsCompetencias": [
+        "CMP0030"
+      ],
       "ordem": 3,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Sistemas",
-      "nome": "Cloud Computing",
-      "descricao": "",
-      "ordem": 4,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Sistemas",
-      "nome": "Segurança de Sistemas",
-      "descricao": "",
-      "ordem": 5,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Sistemas",
-      "nome": "Gestão de Projetos",
-      "descricao": "",
-      "ordem": 6,
-      "ativo": true,
-      "observacoes": ""
-    },
-    {
-      "categoria": "Sistemas",
-      "nome": "ITIL e Governança de TI",
-      "descricao": "",
-      "ordem": 7,
-      "ativo": true,
-      "observacoes": ""
+      "ativo": true
     }
   ],
   "catalogo": [
     {
+      "idCompetencia": "CMP0001",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Data Warehouse e Lakehouse",
       "competencia": "Data Warehouse e Lakehouse",
       "descricaoCompetencia": "Arquitetura de Data Warehouse e evolução para arquiteturas Lakehouse e Data Mesh.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00001",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Arquitetura de Data Warehouse",
@@ -251,6 +207,7 @@
           "observacoes": "Pré-requisito: Modelagem dimensional | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00002",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Arquitetura Lakehouse e Data Mesh",
@@ -262,17 +219,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Arquitetura DW + Cloud | Carga horária estimada: 40h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Senior"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Senior"
     },
     {
+      "idCompetencia": "CMP0002",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Engenharia de Dados",
       "competencia": "Engenharia de Dados",
       "descricaoCompetencia": "Construção de pipelines de dados e engenharia de dados em escala.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00003",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Fundamentos de pipelines de dados",
@@ -285,6 +251,7 @@
           "observacoes": "Pré-requisito: SQL intermediário + Python | Carga horária estimada: 50h"
         },
         {
+          "idCatalogo": "CTL00004",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Engenharia de dados em escala",
@@ -296,17 +263,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Pipelines + Cloud | Carga horária estimada: 60h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Senior"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Senior"
     },
     {
+      "idCompetencia": "CMP0003",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Estatística para BI",
       "competencia": "Estatística para BI",
       "descricaoCompetencia": "Estatística descritiva, inferencial e analytics avançado (forecasting) para BI.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00005",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Estatística descritiva",
@@ -319,6 +295,7 @@
           "observacoes": "Pré-requisito: — | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00006",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Estatística inferencial e probabilidade",
@@ -331,6 +308,7 @@
           "observacoes": "Pré-requisito: Estatística descritiva | Carga horária estimada: 30h"
         },
         {
+          "idCatalogo": "CTL00007",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Analytics avançado e forecasting",
@@ -342,17 +320,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Estatística inferencial + Python | Carga horária estimada: 40h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Pleno"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Pleno"
     },
     {
+      "idCompetencia": "CMP0004",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Governança de Dados",
       "competencia": "Governança e Qualidade de Dados",
       "descricaoCompetencia": "Qualidade de dados, LGPD e catalogação/linhagem de dados (Data Catalog e Lineage).",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00008",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Conceitos de governança e qualidade de dados",
@@ -365,6 +352,7 @@
           "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00009",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "LGPD e privacidade de dados",
@@ -377,6 +365,7 @@
           "observacoes": "Pré-requisito: Governança básica | Carga horária estimada: 15h"
         },
         {
+          "idCatalogo": "CTL00010",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Data Catalog e Data Lineage",
@@ -388,39 +377,26 @@
           "links": "Ferramenta: OpenMetadata Docs",
           "observacoes": "Pré-requisito: LGPD + Arquitetura DW | Carga horária estimada: 20h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Pleno"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Pleno"
     },
     {
+      "idCompetencia": "CMP0005",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Governança de Dados",
-      "competencia": "ISO 27001 Aplicada a Dados e BI",
-      "descricaoCompetencia": "Controles de segurança da informação (ISO 27001) aplicados a dados analíticos e BI.",
-      "ordemCompetencia": 2,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Intermediário",
-          "ordem": 2,
-          "descricao": "ISO 27001 aplicada a dados e BI",
-          "criterios": "Demonstrar conhecimento em: Controles de segurança para dados analíticos, classificação de dados, gestão de incidentes de dados, auditoria",
-          "conteudos": "Controles de segurança para dados analíticos, classificação de dados, gestão de incidentes de dados, auditoria",
-          "cursos": "Udemy – ISO 27001 Foundation",
-          "certificacoes": "",
-          "livros": "ISO 27001 Implementation Guide – IT Governance",
-          "links": "",
-          "observacoes": "Pré-requisito: LGPD dados + Segurança sistemas | Carga horária estimada: 20h"
-        }
-      ]
-    },
-    {
-      "categoria": "Dados",
-      "trilha": "Modelagem Dimensional",
       "competencia": "Modelagem Dimensional",
       "descricaoCompetencia": "Modelagem dimensional de dados (Star Schema) e padrões avançados de Kimball.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00011",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Conceitos de modelagem dimensional",
@@ -433,6 +409,7 @@
           "observacoes": "Pré-requisito: SQL básico | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00012",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Modelagem avançada e padrões Kimball",
@@ -444,17 +421,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Modelagem básica | Carga horária estimada: 25h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Junior"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Junior"
     },
     {
+      "idCompetencia": "CMP0006",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Power BI",
       "competencia": "Power BI",
       "descricaoCompetencia": "Modelagem, DAX e arquitetura de soluções analíticas em Power BI.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00013",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Power BI Desktop – básico",
@@ -467,6 +453,7 @@
           "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00014",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "DAX – Data Analysis Expressions",
@@ -479,6 +466,7 @@
           "observacoes": "Pré-requisito: Power BI Desktop | Carga horária estimada: 40h"
         },
         {
+          "idCatalogo": "CTL00015",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Power BI avançado e arquitetura",
@@ -490,17 +478,26 @@
           "links": "",
           "observacoes": "Pré-requisito: DAX intermediário | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Junior"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Junior"
     },
     {
+      "idCompetencia": "CMP0007",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Python para Dados",
       "competencia": "Python para Análise de Dados e Machine Learning",
       "descricaoCompetencia": "Programação em Python para análise de dados com Pandas/NumPy e modelos de Machine Learning.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00016",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Python básico",
@@ -513,6 +510,7 @@
           "observacoes": "Pré-requisito: — | Carga horária estimada: 30h"
         },
         {
+          "idCatalogo": "CTL00017",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Análise de dados com Pandas e NumPy",
@@ -525,6 +523,7 @@
           "observacoes": "Pré-requisito: Python básico | Carga horária estimada: 30h"
         },
         {
+          "idCatalogo": "CTL00018",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Machine Learning aplicado a BI",
@@ -536,39 +535,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Pandas + Estatística | Carga horária estimada: 80h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Junior"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Junior"
     },
     {
+      "idCompetencia": "CMP0008",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Python para Dados",
-      "competencia": "Visualização e Automação com Python",
-      "descricaoCompetencia": "Visualização de dados e automação de relatórios usando bibliotecas Python.",
-      "ordemCompetencia": 2,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Intermediário",
-          "ordem": 2,
-          "descricao": "Visualização e automação com Python",
-          "criterios": "Demonstrar conhecimento em: Matplotlib, Seaborn, Plotly, automação de relatórios, integração com APIs e bancos de dados",
-          "conteudos": "Matplotlib, Seaborn, Plotly, automação de relatórios, integração com APIs e bancos de dados",
-          "cursos": "DataCamp – Data Visualization in Python\nAlura – Python para BI",
-          "certificacoes": "",
-          "livros": "",
-          "links": "",
-          "observacoes": "Pré-requisito: Pandas | Carga horária estimada: 25h"
-        }
-      ]
-    },
-    {
-      "categoria": "Dados",
-      "trilha": "SQL",
       "competencia": "SQL",
       "descricaoCompetencia": "Consultas e manipulação de dados em SQL, do básico à otimização de performance.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00019",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "SQL básico",
@@ -581,6 +567,7 @@
           "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00020",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "SQL intermediário",
@@ -593,6 +580,7 @@
           "observacoes": "Pré-requisito: SQL básico | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00021",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "SQL avançado e performance",
@@ -604,17 +592,26 @@
           "links": "",
           "observacoes": "Pré-requisito: SQL intermediário | Carga horária estimada: 20h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Junior"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Junior"
     },
     {
+      "idCompetencia": "CMP0009",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Visualização de Dados",
       "competencia": "Storytelling e Comunicação com Dados",
       "descricaoCompetencia": "Princípios de design visual, storytelling e comunicação executiva orientada a dados.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00022",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Princípios de design visual e escolha de gráficos",
@@ -627,6 +624,7 @@
           "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00023",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Storytelling com dados",
@@ -639,6 +637,7 @@
           "observacoes": "Pré-requisito: Princípios de design visual | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00024",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Dataviz estratégico e comunicação executiva",
@@ -650,17 +649,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Storytelling + Power BI ou Tableau intermediário | Carga horária estimada: 20h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Pleno"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Pleno"
     },
     {
+      "idCompetencia": "CMP0010",
+      "categoriaId": "CAT003",
       "categoria": "Dados",
-      "trilha": "Visualização de Dados",
       "competencia": "Ferramentas de Dataviz (Tableau e Looker)",
       "descricaoCompetencia": "Construção de dashboards interativos com Tableau e Looker.",
       "ordemCompetencia": 2,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00025",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Ferramentas de dataviz – Tableau e Looker",
@@ -672,17 +680,88 @@
           "links": "",
           "observacoes": "Pré-requisito: Storytelling com dados + SQL básico | Carga horária estimada: 35h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Dados Pleno"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Pleno"
     },
     {
+      "idCompetencia": "CMP0011",
+      "categoriaId": "CAT003",
+      "categoria": "Dados",
+      "competencia": "ISO 27001 Aplicada a Dados e BI",
+      "descricaoCompetencia": "Controles de segurança da informação (ISO 27001) aplicados a dados analíticos e BI.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00026",
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "ISO 27001 aplicada a dados e BI",
+          "criterios": "Demonstrar conhecimento em: Controles de segurança para dados analíticos, classificação de dados, gestão de incidentes de dados, auditoria",
+          "conteudos": "Controles de segurança para dados analíticos, classificação de dados, gestão de incidentes de dados, auditoria",
+          "cursos": "Udemy – ISO 27001 Foundation",
+          "certificacoes": "",
+          "livros": "ISO 27001 Implementation Guide – IT Governance",
+          "links": "",
+          "observacoes": "Pré-requisito: LGPD dados + Segurança sistemas | Carga horária estimada: 20h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Dados Senior"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Senior"
+    },
+    {
+      "idCompetencia": "CMP0012",
+      "categoriaId": "CAT003",
+      "categoria": "Dados",
+      "competencia": "Visualização e Automação com Python",
+      "descricaoCompetencia": "Visualização de dados e automação de relatórios usando bibliotecas Python.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00027",
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Visualização e automação com Python",
+          "criterios": "Demonstrar conhecimento em: Matplotlib, Seaborn, Plotly, automação de relatórios, integração com APIs e bancos de dados",
+          "conteudos": "Matplotlib, Seaborn, Plotly, automação de relatórios, integração com APIs e bancos de dados",
+          "cursos": "DataCamp – Data Visualization in Python\nAlura – Python para BI",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Pandas | Carga horária estimada: 25h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Dados Pleno"
+      ],
+      "categorias": [
+        "Dados"
+      ],
+      "trilha": "Analista de Dados Pleno"
+    },
+    {
+      "idCompetencia": "CMP0013",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "trilha": "Automatização de Processos",
       "competencia": "Automatização de Processos (RPA e Process Mining)",
       "descricaoCompetencia": "Automação robótica de processos (RPA) e descoberta/análise de processos via Process Mining.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00028",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Introdução a RPA",
@@ -695,6 +774,7 @@
           "observacoes": "Pré-requisito: SOPs | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00029",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Process Mining",
@@ -706,61 +786,26 @@
           "links": "Ferramenta: Celonis Academy",
           "observacoes": "Pré-requisito: Mapeamento As-Is + SQL básico | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Processos Pleno"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Pleno"
     },
     {
+      "idCompetencia": "CMP0014",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "trilha": "Fundamentos de BPM",
-      "competencia": "Introdução a Processos (BPM)",
-      "descricaoCompetencia": "Conceitos fundamentais de processo, ciclo de vida e visão sistêmica de negócio.",
-      "ordemCompetencia": 1,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Básico",
-          "ordem": 1,
-          "descricao": "Introdução a BPM e ciclo de vida de processos",
-          "criterios": "Demonstrar conhecimento em: Conceito de processo, tipos (operacional, gerencial, suporte), ciclo PDCA, visão sistêmica",
-          "conteudos": "Conceito de processo, tipos (operacional, gerencial, suporte), ciclo PDCA, visão sistêmica",
-          "cursos": "FGV Online – Gestão por Processos",
-          "certificacoes": "",
-          "livros": "Gestão de Processos – ABPMP CBOK",
-          "links": "",
-          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
-        }
-      ]
-    },
-    {
-      "categoria": "Processos",
-      "trilha": "Fundamentos de BPM",
-      "competencia": "Notação BPMN 2.0",
-      "descricaoCompetencia": "Modelagem de processos usando a notação BPMN 2.0 (eventos, atividades, gateways, pools e lanes).",
-      "ordemCompetencia": 2,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Básico",
-          "ordem": 1,
-          "descricao": "Notação BPMN 2.0",
-          "criterios": "Demonstrar conhecimento em: Elementos básicos: eventos, atividades, gateways, pools, lanes, fluxos de sequência e mensagem",
-          "conteudos": "Elementos básicos: eventos, atividades, gateways, pools, lanes, fluxos de sequência e mensagem",
-          "cursos": "",
-          "certificacoes": "",
-          "livros": "BPMN Method and Style – Bruce Silver",
-          "links": "Ferramenta: Bizagi Modeler (gratuito)",
-          "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 20h"
-        }
-      ]
-    },
-    {
-      "categoria": "Processos",
-      "trilha": "Gestão Estratégica de Processos",
       "competencia": "Gestão Estratégica de Processos",
       "descricaoCompetencia": "Alinhamento estratégico da gestão por processos, arquitetura de processos e cadeia de valor.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00030",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Gestão por processos e estrutura organizacional",
@@ -773,6 +818,7 @@
           "observacoes": "Pré-requisito: ABPMP CBOK | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00031",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Arquitetura de processos e cadeia de valor",
@@ -784,17 +830,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Gestão por processos | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Processos Senior"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Senior"
     },
     {
+      "idCompetencia": "CMP0015",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "trilha": "Governança de Processos",
       "competencia": "Governança e Maturidade de Processos (BPMO/CMMI)",
       "descricaoCompetencia": "Estruturação do escritório de processos (BPMO) e evolução da maturidade organizacional em BPM.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00032",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Escritório de Processos (BPMO)",
@@ -807,6 +862,7 @@
           "observacoes": "Pré-requisito: ABPMP CBOK | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00033",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Maturidade organizacional (CMMI / OMG BPMM)",
@@ -818,127 +874,57 @@
           "links": "",
           "observacoes": "Pré-requisito: Escritório de Processos | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Processos Senior"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Senior"
     },
     {
+      "idCompetencia": "CMP0016",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "trilha": "Governança de Processos",
-      "competencia": "Auditoria e Conformidade de Processos",
-      "descricaoCompetencia": "Auditoria interna, conformidade regulatória e controles internos aplicados a processos.",
-      "ordemCompetencia": 2,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Intermediário",
-          "ordem": 2,
-          "descricao": "Auditoria e conformidade de processos",
-          "criterios": "Demonstrar conhecimento em: Auditoria interna de processos, conformidade regulatória, controles internos (COSO), evidências de execução",
-          "conteudos": "Auditoria interna de processos, conformidade regulatória, controles internos (COSO), evidências de execução",
-          "cursos": "Udemy – Auditoria de Processos e Controles Internos",
-          "certificacoes": "",
-          "livros": "Internal Auditing – Sawyer",
-          "links": "",
-          "observacoes": "Pré-requisito: SOPs + RACI | Carga horária estimada: 25h"
-        }
-      ]
-    },
-    {
-      "categoria": "Processos",
-      "trilha": "Governança de Processos",
-      "competencia": "LGPD Aplicada a Processos",
-      "descricaoCompetencia": "Adequação de processos e SOPs à Lei Geral de Proteção de Dados (LGPD).",
-      "ordemCompetencia": 3,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Intermediário",
-          "ordem": 2,
-          "descricao": "LGPD aplicada a processos e SOPs",
-          "criterios": "Demonstrar conhecimento em: Mapeamento de dados pessoais em fluxos de processo, adequação de SOPs à LGPD, RIPD (Relatório de Impacto)",
-          "conteudos": "Mapeamento de dados pessoais em fluxos de processo, adequação de SOPs à LGPD, RIPD (Relatório de Impacto)",
-          "cursos": "FGV – LGPD para Gestores",
-          "certificacoes": "",
-          "livros": "LGPD Comentada – Cots & Oliveira",
-          "links": "",
-          "observacoes": "Pré-requisito: SOPs + Mapeamento As-Is | Carga horária estimada: 15h"
-        }
-      ]
-    },
-    {
-      "categoria": "Processos",
-      "trilha": "Governança e Documentação",
-      "competencia": "SOPs e Manuais de Processo",
-      "descricaoCompetencia": "Elaboração de procedimentos operacionais padrão (SOPs) e manuais de processo.",
+      "competencia": "Introdução a Processos (BPM)",
+      "descricaoCompetencia": "Conceitos fundamentais de processo, ciclo de vida e visão sistêmica de negócio.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00034",
           "nivel": "Básico",
           "ordem": 1,
-          "descricao": "SOPs e manuais de processo",
-          "criterios": "Demonstrar conhecimento em: Estrutura de procedimento operacional padrão, padronização, versionamento de documentos",
-          "conteudos": "Estrutura de procedimento operacional padrão, padronização, versionamento de documentos",
-          "cursos": "",
+          "descricao": "Introdução a BPM e ciclo de vida de processos",
+          "criterios": "Demonstrar conhecimento em: Conceito de processo, tipos (operacional, gerencial, suporte), ciclo PDCA, visão sistêmica",
+          "conteudos": "Conceito de processo, tipos (operacional, gerencial, suporte), ciclo PDCA, visão sistêmica",
+          "cursos": "FGV Online – Gestão por Processos",
           "certificacoes": "",
-          "livros": "",
-          "links": "Template: ISO 9001 SOP\nFerramenta: Confluence, Notion",
-          "observacoes": "Pré-requisito: BPMN 2.0 | Carga horária estimada: 10h"
-        }
-      ]
-    },
-    {
-      "categoria": "Processos",
-      "trilha": "Governança e Documentação",
-      "competencia": "Matriz RACI e Gestão de Responsabilidades",
-      "descricaoCompetencia": "Definição de papéis e responsabilidades em processos e projetos usando a matriz RACI.",
-      "ordemCompetencia": 2,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Básico",
-          "ordem": 1,
-          "descricao": "Matriz RACI e gestão de responsabilidades",
-          "criterios": "Demonstrar conhecimento em: Definição de papéis (Responsible, Accountable, Consulted, Informed), aplicação em projetos e processos",
-          "conteudos": "Definição de papéis (Responsible, Accountable, Consulted, Informed), aplicação em projetos e processos",
-          "cursos": "Alura – Gestão de Processos",
-          "certificacoes": "",
-          "livros": "PMBOK Guide",
+          "livros": "Gestão de Processos – ABPMP CBOK",
           "links": "",
-          "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 10h"
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Processos Junior"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Junior"
     },
     {
+      "idCompetencia": "CMP0017",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "trilha": "Governança e Documentação",
-      "competencia": "Frameworks ABPMP e Maturidade BPM",
-      "descricaoCompetencia": "Modelos de referência (ABPMP CBOK) e avaliação de maturidade em gestão de processos.",
-      "ordemCompetencia": 3,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Intermediário",
-          "ordem": 2,
-          "descricao": "Frameworks ABPMP e maturidade BPM",
-          "criterios": "Demonstrar conhecimento em: ABPMP BPM CBOK, modelos de maturidade (CMMI, OMG BPMM), avaliação e evolução de capacidades",
-          "conteudos": "ABPMP BPM CBOK, modelos de maturidade (CMMI, OMG BPMM), avaliação e evolução de capacidades",
-          "cursos": "",
-          "certificacoes": "ABPMP Brasil – Certificação CBPP",
-          "livros": "BPM CBOK v4.0 – ABPMP",
-          "links": "",
-          "observacoes": "Pré-requisito: Mapeamento To-Be | Carga horária estimada: 30h"
-        }
-      ]
-    },
-    {
-      "categoria": "Processos",
-      "trilha": "Mapeamento de Processos",
       "competencia": "Mapeamento de Processos",
       "descricaoCompetencia": "Levantamento e documentação de processos, do estado atual (As-Is) ao redesenho futuro (To-Be).",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00035",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Mapeamento As-Is",
@@ -951,6 +937,7 @@
           "observacoes": "Pré-requisito: BPMN 2.0 | Carga horária estimada: 15h"
         },
         {
+          "idCatalogo": "CTL00036",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Mapeamento To-Be e análise de gaps",
@@ -962,17 +949,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Mapeamento As-Is | Carga horária estimada: 20h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Processos Junior"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Junior"
     },
     {
+      "idCompetencia": "CMP0018",
+      "categoriaId": "CAT001",
       "categoria": "Processos",
-      "trilha": "Melhoria Contínua",
       "competencia": "Melhoria Contínua (Lean e Six Sigma)",
       "descricaoCompetencia": "Metodologias de melhoria contínua e redução de desperdícios, do Lean Thinking ao Six Sigma Black Belt.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00037",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Lean Thinking e eliminação de desperdícios",
@@ -985,6 +981,7 @@
           "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00038",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Six Sigma – Yellow/Green Belt",
@@ -997,6 +994,7 @@
           "observacoes": "Pré-requisito: Lean Thinking | Carga horária estimada: 40h"
         },
         {
+          "idCatalogo": "CTL00039",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Six Sigma – Black Belt",
@@ -1008,17 +1006,243 @@
           "links": "",
           "observacoes": "Pré-requisito: Green Belt | Carga horária estimada: 80h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Processos Pleno"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Pleno"
     },
     {
+      "idCompetencia": "CMP0019",
+      "categoriaId": "CAT001",
+      "categoria": "Processos",
+      "competencia": "SOPs e Manuais de Processo",
+      "descricaoCompetencia": "Elaboração de procedimentos operacionais padrão (SOPs) e manuais de processo.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00040",
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "SOPs e manuais de processo",
+          "criterios": "Demonstrar conhecimento em: Estrutura de procedimento operacional padrão, padronização, versionamento de documentos",
+          "conteudos": "Estrutura de procedimento operacional padrão, padronização, versionamento de documentos",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "Template: ISO 9001 SOP\nFerramenta: Confluence, Notion",
+          "observacoes": "Pré-requisito: BPMN 2.0 | Carga horária estimada: 10h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Processos Junior"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Junior"
+    },
+    {
+      "idCompetencia": "CMP0020",
+      "categoriaId": "CAT001",
+      "categoria": "Processos",
+      "competencia": "Auditoria e Conformidade de Processos",
+      "descricaoCompetencia": "Auditoria interna, conformidade regulatória e controles internos aplicados a processos.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00041",
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Auditoria e conformidade de processos",
+          "criterios": "Demonstrar conhecimento em: Auditoria interna de processos, conformidade regulatória, controles internos (COSO), evidências de execução",
+          "conteudos": "Auditoria interna de processos, conformidade regulatória, controles internos (COSO), evidências de execução",
+          "cursos": "Udemy – Auditoria de Processos e Controles Internos",
+          "certificacoes": "",
+          "livros": "Internal Auditing – Sawyer",
+          "links": "",
+          "observacoes": "Pré-requisito: SOPs + RACI | Carga horária estimada: 25h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Processos Pleno"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Pleno"
+    },
+    {
+      "idCompetencia": "CMP0021",
+      "categoriaId": "CAT001",
+      "categoria": "Processos",
+      "competencia": "Matriz RACI e Gestão de Responsabilidades",
+      "descricaoCompetencia": "Definição de papéis e responsabilidades em processos e projetos usando a matriz RACI.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00042",
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Matriz RACI e gestão de responsabilidades",
+          "criterios": "Demonstrar conhecimento em: Definição de papéis (Responsible, Accountable, Consulted, Informed), aplicação em projetos e processos",
+          "conteudos": "Definição de papéis (Responsible, Accountable, Consulted, Informed), aplicação em projetos e processos",
+          "cursos": "Alura – Gestão de Processos",
+          "certificacoes": "",
+          "livros": "PMBOK Guide",
+          "links": "",
+          "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 10h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Processos Junior"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Junior"
+    },
+    {
+      "idCompetencia": "CMP0022",
+      "categoriaId": "CAT001",
+      "categoria": "Processos",
+      "competencia": "Notação BPMN 2.0",
+      "descricaoCompetencia": "Modelagem de processos usando a notação BPMN 2.0 (eventos, atividades, gateways, pools e lanes).",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00043",
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Notação BPMN 2.0",
+          "criterios": "Demonstrar conhecimento em: Elementos básicos: eventos, atividades, gateways, pools, lanes, fluxos de sequência e mensagem",
+          "conteudos": "Elementos básicos: eventos, atividades, gateways, pools, lanes, fluxos de sequência e mensagem",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "BPMN Method and Style – Bruce Silver",
+          "links": "Ferramenta: Bizagi Modeler (gratuito)",
+          "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 20h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Processos Junior"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Junior"
+    },
+    {
+      "idCompetencia": "CMP0023",
+      "categoriaId": "CAT001",
+      "categoria": "Processos",
+      "competencia": "Frameworks ABPMP e Maturidade BPM",
+      "descricaoCompetencia": "Modelos de referência (ABPMP CBOK) e avaliação de maturidade em gestão de processos.",
+      "ordemCompetencia": 3,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00044",
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Frameworks ABPMP e maturidade BPM",
+          "criterios": "Demonstrar conhecimento em: ABPMP BPM CBOK, modelos de maturidade (CMMI, OMG BPMM), avaliação e evolução de capacidades",
+          "conteudos": "ABPMP BPM CBOK, modelos de maturidade (CMMI, OMG BPMM), avaliação e evolução de capacidades",
+          "cursos": "",
+          "certificacoes": "ABPMP Brasil – Certificação CBPP",
+          "livros": "BPM CBOK v4.0 – ABPMP",
+          "links": "",
+          "observacoes": "Pré-requisito: Mapeamento To-Be | Carga horária estimada: 30h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Processos Pleno"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Pleno"
+    },
+    {
+      "idCompetencia": "CMP0024",
+      "categoriaId": "CAT001",
+      "categoria": "Processos",
+      "competencia": "LGPD Aplicada a Processos",
+      "descricaoCompetencia": "Adequação de processos e SOPs à Lei Geral de Proteção de Dados (LGPD).",
+      "ordemCompetencia": 3,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00045",
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "LGPD aplicada a processos e SOPs",
+          "criterios": "Demonstrar conhecimento em: Mapeamento de dados pessoais em fluxos de processo, adequação de SOPs à LGPD, RIPD (Relatório de Impacto)",
+          "conteudos": "Mapeamento de dados pessoais em fluxos de processo, adequação de SOPs à LGPD, RIPD (Relatório de Impacto)",
+          "cursos": "FGV – LGPD para Gestores",
+          "certificacoes": "",
+          "livros": "LGPD Comentada – Cots & Oliveira",
+          "links": "",
+          "observacoes": "Pré-requisito: SOPs + Mapeamento As-Is | Carga horária estimada: 15h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Processos Pleno"
+      ],
+      "categorias": [
+        "Processos"
+      ],
+      "trilha": "Analista de Processos Pleno"
+    },
+    {
+      "idCompetencia": "CMP0025",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Cloud Computing",
+      "competencia": "Arquitetura de Sistemas",
+      "descricaoCompetencia": "Conceitos de arquitetura de sistemas, modelo cliente-servidor, APIs e bancos de dados.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00046",
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Conceitos de arquitetura de sistemas",
+          "criterios": "Demonstrar conhecimento em: Cliente-servidor, APIs REST, microsserviços, monolito, SaaS/PaaS/IaaS, bancos de dados relacionais vs NoSQL",
+          "conteudos": "Cliente-servidor, APIs REST, microsserviços, monolito, SaaS/PaaS/IaaS, bancos de dados relacionais vs NoSQL",
+          "cursos": "Coursera – IBM IT Fundamentals",
+          "certificacoes": "",
+          "livros": "Fundamentos de Sistemas de Informação – O'Brien",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Sistemas Junior"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Junior"
+    },
+    {
+      "idCompetencia": "CMP0026",
+      "categoriaId": "CAT002",
+      "categoria": "Sistemas",
       "competencia": "Cloud Computing",
       "descricaoCompetencia": "Fundamentos, serviços de dados e arquitetura de soluções em nuvem (Azure/AWS/GCP).",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00047",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Fundamentos de Cloud (Azure/AWS/GCP)",
@@ -1031,6 +1255,7 @@
           "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 20h"
         },
         {
+          "idCatalogo": "CTL00048",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Serviços de dados em Cloud",
@@ -1043,6 +1268,7 @@
           "observacoes": "Pré-requisito: Fundamentos de Cloud | Carga horária estimada: 30h"
         },
         {
+          "idCatalogo": "CTL00049",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Arquitetura de soluções em Cloud",
@@ -1054,17 +1280,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Serviços de dados em Cloud | Carga horária estimada: 50h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Pleno"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Pleno"
     },
     {
+      "idCompetencia": "CMP0027",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "ERP e Aplicações Corporativas",
       "competencia": "ERP e Aplicações Corporativas",
       "descricaoCompetencia": "Fundamentos e administração de sistemas ERP e suas aplicações corporativas.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00050",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Fundamentos de ERP",
@@ -1077,6 +1312,7 @@
           "observacoes": "Pré-requisito: Arquitetura de sistemas | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00051",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Administração e configuração de ERP",
@@ -1088,61 +1324,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Fundamentos de ERP | Carga horária estimada: 40h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Pleno"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Pleno"
     },
     {
+      "idCompetencia": "CMP0028",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Fundamentos de TI",
-      "competencia": "Arquitetura de Sistemas",
-      "descricaoCompetencia": "Conceitos de arquitetura de sistemas, modelo cliente-servidor, APIs e bancos de dados.",
-      "ordemCompetencia": 1,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Básico",
-          "ordem": 1,
-          "descricao": "Conceitos de arquitetura de sistemas",
-          "criterios": "Demonstrar conhecimento em: Cliente-servidor, APIs REST, microsserviços, monolito, SaaS/PaaS/IaaS, bancos de dados relacionais vs NoSQL",
-          "conteudos": "Cliente-servidor, APIs REST, microsserviços, monolito, SaaS/PaaS/IaaS, bancos de dados relacionais vs NoSQL",
-          "cursos": "Coursera – IBM IT Fundamentals",
-          "certificacoes": "",
-          "livros": "Fundamentos de Sistemas de Informação – O'Brien",
-          "links": "",
-          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
-        }
-      ]
-    },
-    {
-      "categoria": "Sistemas",
-      "trilha": "Fundamentos de TI",
-      "competencia": "Redes e Segurança Básica",
-      "descricaoCompetencia": "Fundamentos de redes, protocolos e segurança básica da informação.",
-      "ordemCompetencia": 2,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Básico",
-          "ordem": 1,
-          "descricao": "Redes e segurança básica",
-          "criterios": "Demonstrar conhecimento em: TCP/IP, HTTP/HTTPS, firewall, VPN, autenticação, conceitos de criptografia",
-          "conteudos": "TCP/IP, HTTP/HTTPS, firewall, VPN, autenticação, conceitos de criptografia",
-          "cursos": "Cisco Networking Academy – IT Essentials\nAlura – Redes para Devs",
-          "certificacoes": "",
-          "livros": "",
-          "links": "",
-          "observacoes": "Pré-requisito: Arquitetura de sistemas | Carga horária estimada: 15h"
-        }
-      ]
-    },
-    {
-      "categoria": "Sistemas",
-      "trilha": "Gestão de Projetos",
       "competencia": "Fundamentos de Gerenciamento de Projetos (PMBok)",
       "descricaoCompetencia": "Fundamentos de gerenciamento de projetos segundo o guia PMBOK.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00052",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Fundamentos de gerenciamento de projetos (PMBok)",
@@ -1154,61 +1355,26 @@
           "links": "",
           "observacoes": "Pré-requisito: — | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Junior"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Junior"
     },
     {
+      "idCompetencia": "CMP0030",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Gestão de Projetos",
-      "competencia": "Métodos Ágeis – Scrum e Kanban",
-      "descricaoCompetencia": "Práticas ágeis de gestão de projetos com Scrum e Kanban.",
-      "ordemCompetencia": 2,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Básico",
-          "ordem": 1,
-          "descricao": "Métodos Ágeis – Scrum e Kanban",
-          "criterios": "Demonstrar conhecimento em: Sprints, cerimônias, product backlog, papéis (PO, SM, Dev Team), quadro Kanban, WIP limits",
-          "conteudos": "Sprints, cerimônias, product backlog, papéis (PO, SM, Dev Team), quadro Kanban, WIP limits",
-          "cursos": "Alura – Scrum e Agile",
-          "certificacoes": "",
-          "livros": "Scrum Guide (gratuito)",
-          "links": "",
-          "observacoes": "Pré-requisito: Fundamentos de projetos | Carga horária estimada: 20h"
-        }
-      ]
-    },
-    {
-      "categoria": "Sistemas",
-      "trilha": "Gestão de Projetos",
-      "competencia": "Gestão de Projetos de Dados e BI",
-      "descricaoCompetencia": "Gestão de projetos analíticos e de BI com adaptação de práticas ágeis.",
-      "ordemCompetencia": 3,
-      "ativo": true,
-      "niveis": [
-        {
-          "nivel": "Intermediário",
-          "ordem": 2,
-          "descricao": "Gestão de projetos de dados e BI",
-          "criterios": "Demonstrar conhecimento em: Adaptação de Scrum para projetos analíticos, critérios de aceitação de dashboards, gestão de stakeholders em BI",
-          "conteudos": "Adaptação de Scrum para projetos analíticos, critérios de aceitação de dashboards, gestão de stakeholders em BI",
-          "cursos": "Udemy – Gestão de Projetos de BI",
-          "certificacoes": "",
-          "livros": "Data-Driven – DJ Patil",
-          "links": "",
-          "observacoes": "Pré-requisito: Scrum + Fundamentos de BI | Carga horária estimada: 20h"
-        }
-      ]
-    },
-    {
-      "categoria": "Sistemas",
-      "trilha": "ITIL e Governança de TI",
       "competencia": "ITIL e Governança de TI (COBIT)",
       "descricaoCompetencia": "Gestão de serviços de TI (ITIL 4) e governança de TI (COBIT).",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00055",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "ITIL 4 – Fundamentos",
@@ -1221,6 +1387,7 @@
           "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 25h"
         },
         {
+          "idCatalogo": "CTL00056",
           "nivel": "Especialista",
           "ordem": 3,
           "descricao": "Governança de TI e COBIT",
@@ -1232,17 +1399,26 @@
           "links": "",
           "observacoes": "Pré-requisito: ITIL 4 | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Senior"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Senior"
     },
     {
+      "idCompetencia": "CMP0029",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Integrações e APIs",
       "competencia": "Integrações e APIs",
       "descricaoCompetencia": "Consumo e integração de sistemas via APIs REST e ferramentas de integração/ETL.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00053",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Consumo de APIs REST",
@@ -1255,6 +1431,7 @@
           "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 15h"
         },
         {
+          "idCatalogo": "CTL00054",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Integração de sistemas e ETL conceitual",
@@ -1266,17 +1443,26 @@
           "links": "",
           "observacoes": "Pré-requisito: APIs REST | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Junior"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Junior"
     },
     {
+      "idCompetencia": "CMP0031",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Segurança de Sistemas",
       "competencia": "Segurança da Informação e Arquitetura Segura",
       "descricaoCompetencia": "Fundamentos de segurança da informação e arquitetura de controle de acesso (IAM, Zero Trust).",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00057",
           "nivel": "Básico",
           "ordem": 1,
           "descricao": "Segurança da informação – fundamentos",
@@ -1289,6 +1475,7 @@
           "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 15h"
         },
         {
+          "idCatalogo": "CTL00058",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Arquitetura segura e controle de acesso",
@@ -1300,17 +1487,26 @@
           "links": "",
           "observacoes": "Pré-requisito: Segurança fundamentos | Carga horária estimada: 20h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Junior"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Junior"
     },
     {
+      "idCompetencia": "CMP0032",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Segurança de Sistemas",
       "competencia": "ISO 27001 – Gestão de Segurança da Informação",
       "descricaoCompetencia": "Implementação e gestão de sistemas de segurança da informação segundo a norma ISO 27001.",
       "ordemCompetencia": 2,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00059",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "ISO 27001 – Gestão de Segurança da Informação",
@@ -1322,17 +1518,119 @@
           "links": "",
           "observacoes": "Pré-requisito: Arquitetura segura | Carga horária estimada: 30h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Pleno"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Pleno"
     },
     {
+      "idCompetencia": "CMP0033",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Segurança de Sistemas",
+      "competencia": "Métodos Ágeis – Scrum e Kanban",
+      "descricaoCompetencia": "Práticas ágeis de gestão de projetos com Scrum e Kanban.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00060",
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Métodos Ágeis – Scrum e Kanban",
+          "criterios": "Demonstrar conhecimento em: Sprints, cerimônias, product backlog, papéis (PO, SM, Dev Team), quadro Kanban, WIP limits",
+          "conteudos": "Sprints, cerimônias, product backlog, papéis (PO, SM, Dev Team), quadro Kanban, WIP limits",
+          "cursos": "Alura – Scrum e Agile",
+          "certificacoes": "",
+          "livros": "Scrum Guide (gratuito)",
+          "links": "",
+          "observacoes": "Pré-requisito: Fundamentos de projetos | Carga horária estimada: 20h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Sistemas Junior"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Junior"
+    },
+    {
+      "idCompetencia": "CMP0034",
+      "categoriaId": "CAT002",
+      "categoria": "Sistemas",
+      "competencia": "Redes e Segurança Básica",
+      "descricaoCompetencia": "Fundamentos de redes, protocolos e segurança básica da informação.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00061",
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Redes e segurança básica",
+          "criterios": "Demonstrar conhecimento em: TCP/IP, HTTP/HTTPS, firewall, VPN, autenticação, conceitos de criptografia",
+          "conteudos": "TCP/IP, HTTP/HTTPS, firewall, VPN, autenticação, conceitos de criptografia",
+          "cursos": "Cisco Networking Academy – IT Essentials\nAlura – Redes para Devs",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Arquitetura de sistemas | Carga horária estimada: 15h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Sistemas Junior"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Junior"
+    },
+    {
+      "idCompetencia": "CMP0035",
+      "categoriaId": "CAT002",
+      "categoria": "Sistemas",
+      "competencia": "Gestão de Projetos de Dados e BI",
+      "descricaoCompetencia": "Gestão de projetos analíticos e de BI com adaptação de práticas ágeis.",
+      "ordemCompetencia": 3,
+      "ativo": true,
+      "niveis": [
+        {
+          "idCatalogo": "CTL00062",
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Gestão de projetos de dados e BI",
+          "criterios": "Demonstrar conhecimento em: Adaptação de Scrum para projetos analíticos, critérios de aceitação de dashboards, gestão de stakeholders em BI",
+          "conteudos": "Adaptação de Scrum para projetos analíticos, critérios de aceitação de dashboards, gestão de stakeholders em BI",
+          "cursos": "Udemy – Gestão de Projetos de BI",
+          "certificacoes": "",
+          "livros": "Data-Driven – DJ Patil",
+          "links": "",
+          "observacoes": "Pré-requisito: Scrum + Fundamentos de BI | Carga horária estimada: 20h"
+        }
+      ],
+      "trilhas": [
+        "Analista de Sistemas Pleno"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Pleno"
+    },
+    {
+      "idCompetencia": "CMP0036",
+      "categoriaId": "CAT002",
+      "categoria": "Sistemas",
       "competencia": "LGPD Aplicada a Sistemas",
       "descricaoCompetencia": "Adequação de sistemas e arquitetura de TI à LGPD.",
       "ordemCompetencia": 3,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00063",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "LGPD aplicada a sistemas e arquitetura",
@@ -1344,17 +1642,26 @@
           "links": "",
           "observacoes": "Pré-requisito: ISO 27001 + Arquitetura segura | Carga horária estimada: 15h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Pleno"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Pleno"
     },
     {
+      "idCompetencia": "CMP0037",
+      "categoriaId": "CAT002",
       "categoria": "Sistemas",
-      "trilha": "Segurança de Sistemas",
       "competencia": "Row-Level Security e Mascaramento de Dados",
       "descricaoCompetencia": "Controle de acesso a dados em nível de linha (RLS) e mascaramento/anonimização de dados.",
       "ordemCompetencia": 4,
       "ativo": true,
       "niveis": [
         {
+          "idCatalogo": "CTL00064",
           "nivel": "Intermediário",
           "ordem": 2,
           "descricao": "Row-Level Security e mascaramento de dados",
@@ -1366,7 +1673,14 @@
           "links": "Docs: Microsoft – Row-Level Security",
           "observacoes": "Pré-requisito: LGPD sistemas + Power BI intermediário | Carga horária estimada: 15h"
         }
-      ]
+      ],
+      "trilhas": [
+        "Analista de Sistemas Pleno"
+      ],
+      "categorias": [
+        "Sistemas"
+      ],
+      "trilha": "Analista de Sistemas Pleno"
     }
   ]
 }

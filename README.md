@@ -85,3 +85,34 @@ Os dados pessoais ficam no navegador. O catálogo oficial está publicado em `da
 - Indicadores de média de autoavaliação por categoria adicionados ao Heatmap.
 - Evolução recebeu calendário mensal de cursos planejados e concluídos.
 - Campo Status do planejamento recebeu destaque visual.
+
+
+## Modelo de dados V7
+
+Esta versão utiliza IDs estáveis e relação muitos-para-muitos sem aba intermediária.
+
+- Categorias: 5
+- Trilhas: 23
+- Competências únicas: 37
+- Linhas de catálogo por nível: 64
+
+A coluna `IDs_Competencias` da aba `02_Trilhas` armazena uma lista ordenada separada por `|`.
+
+Exemplo:
+
+`CMP0001|CMP0004|CMP0012`
+
+A mesma competência pode ser reutilizada em várias trilhas repetindo o mesmo ID nessas listas.
+
+
+## Base final incorporada
+
+A versão final foi gerada a partir de `ClimbMap_Refeito.xlsx`.
+
+- Categorias ativas: 5
+- Trilhas ativas: 9
+- Competências únicas: 37
+- Níveis ativos: 64
+- Relações Trilha–Competência: 37
+
+O Excel original utilizado para gerar o catálogo está disponível em `docs/ClimbMap_Refeito.xlsx`.

@@ -1,14 +1,21 @@
-# Estrutura funcional
+# Modelo V7 com IDs
 
-Categoria → Trilha → Competência → Nível → conteúdos de referência.
+## Abas
 
-A autoavaliação ocorre na competência e usa a escala técnica de 0 a 4. O estado não avaliado é armazenado sem valor.
+### 01_Categorias
+ID_Categoria é a chave primária da categoria.
 
-Como a avaliação é da competência, todos os cards de níveis da mesma competência recebem a mesma cor no Heatmap.
+### 02_Trilhas
+ID_Trilha é a chave primária.
+ID_Categoria aponta para a categoria.
+IDs_Competencias contém vários IDs separados por `|`.
 
-Ao adicionar uma trilha, o usuário escolhe:
-- primeiro nível de cada competência;
-- um nível selecionado para todas;
-- todos os níveis disponíveis.
+### 03_Catalogo
+ID_Catalogo identifica uma linha de nível.
+ID_Competencia identifica a competência macro e se repete em todos os níveis da mesma competência.
+ID_Categoria_Principal é uma classificação principal e não limita a reutilização da competência em trilhas de outras categorias.
 
-Itens já presentes no planejamento não são duplicados.
+## Muitos-para-muitos
+
+Uma trilha possui várias competências e uma competência pode existir em várias trilhas.
+A relação é mantida exclusivamente em `02_Trilhas.IDs_Competencias`.

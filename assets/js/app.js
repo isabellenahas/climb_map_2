@@ -1,5 +1,5 @@
 
-const STORAGE_KEY="climbmap_simple_v6",CATALOG_KEY="climbmap_catalog_v6";
+const STORAGE_KEY="climbmap_simple_v7",CATALOG_KEY="climbmap_catalog_v7";
 const LEVELS=["Fundamentos","Básico","Intermediário","Avançado","Especialista"];
 const STATUS={standby:"Stand by",aberto:"Em Aberto",andamento:"Em Andamento",concluido:"Concluído",cancelado:"Cancelado"};
 const ASSESS={na:"Não avaliada",0:"Não conheço",1:"Já ouvi falar",2:"Experimentei",3:"Autônomo",4:"Ensino"};
@@ -35,7 +35,7 @@ function slug(value){return String(value||"").normalize("NFD").replace(/[\u0300-
 function categoryClass(category){return`category-${slug(category)}`}
 function openCatalogFocus(competency){filters.catalog={q:competency,category:"",trail:"",level:"",assessment:""};pendingCatalogFocus=competency;navigate("catalogo")}
 function applyCatalogFocus(){if(!pendingCatalogFocus)return;const exact=pendingCatalogFocus;const card=[...document.querySelectorAll("[data-catalog-card]")].find(c=>norm(c.dataset.competency)===norm(exact));if(card)card.querySelector(".detail-panel")?.classList.remove("hidden");pendingCatalogFocus=null}
-function fullBackupPayload(){return{format:"climbmap-full-backup",version:"6.0.0",exportedAt:new Date().toISOString(),state,catalog:baseData}}
+function fullBackupPayload(){return{format:"climbmap-full-backup",version:"7.0.0",exportedAt:new Date().toISOString(),state,catalog:baseData}}
 function validateFullBackup(data){return data&&data.format==="climbmap-full-backup"&&data.state&&data.catalog&&Array.isArray(data.catalog.catalogo)}
 
 function metric(label,value,caption,progressValue=null){return`<div class="metric"><small>${esc(label)}</small><strong>${esc(value)}</strong><span class="muted">${esc(caption)}</span>${progressValue===null?"":`<div class="progress"><span style="width:${progressValue}%"></span></div>`}</div>`}
@@ -74,7 +74,7 @@ function filteredCatalogItems(){
   const hay=norm([c.competencia,c.categoria,c.trilha,c.descricaoCompetencia,c.niveis.map(n=>`${n.nivel} ${n.conteudos}`).join(" ")].join(" "));
   const exact=qn&&norm(c.competencia)===qn;
   const textOk=!qn||(activeCatalog().some(x=>norm(x.competencia)===qn)?exact:hay.includes(qn));
-  return textOk&&(!f.category||c.categoria===f.category)&&(!f.trail||c.trilha===f.trail)&&(!f.level||c.niveis.some(n=>n.nivel===f.level))&&(!f.assessment||assessmentKey(c.competencia)===f.assessment)
+  return textOk&&(!f.category||c.categoria===f.category)&&(!f.trail||(c.trilhas||[c.trilha]).includes(f.trail))&&(!f.level||c.niveis.some(n=>n.nivel===f.level))&&(!f.assessment||assessmentKey(c.competencia)===f.assessment)
  })
 }
 function renderCatalog(){
@@ -105,8 +105,8 @@ function renderPlanning(){
 function planningCard(p){const displayType=p.type==="nivel"?"Competência":(p.studyType||"Outro");return`<article class="planning-card priority-${p.priority}" data-edit="${p.id}" data-search="${esc(`${p.title} ${p.competency||""}`.toLowerCase())}" data-status="${p.status}" data-type="${esc(displayType)}" data-priority="${p.priority}" data-category="${esc(p.category||"")}" data-trail="${esc(p.trail||"")}" data-level="${esc(p.level||"")}"><div class="tag-row"><span class="tag">${esc(displayType)}</span><span class="tag">${esc(p.priority)}</span></div><h4>${esc(p.title)}</h4>${p.competency?`<small>${esc(p.competency)} · ${esc(p.level)}</small>`:`<small>${esc(displayType)} manual</small>`}${p.deadline?`<p><small>Prazo: ${formatDate(p.deadline)}</small></p>`:""}</article>`}
 function renderTrails(){
  const trails=(baseData.trilhas||[]).filter(t=>t.ativo!==false);if(!trails.length)return empty("Nenhuma trilha cadastrada","Importe a base.");
- return`<div class="trail-list">${trails.map(t=>{const key=`${t.categoria}|||${t.nome}`,comps=activeCatalog().filter(c=>c.trilha===t.nome&&c.categoria===t.categoria),complete=comps.filter(c=>assessmentKey(c.competencia)==="4"||completedLevels(c.competencia).size>=c.niveis.length).length,pct=percent(complete,comps.length),expanded=!!state.expandedTrails[key];return`<article class="trail-card"><div class="trail-header"><div><div class="tag-row"><span class="tag category">${esc(t.categoria)}</span><span class="tag">${comps.length} competências</span></div><h3>${esc(t.nome)}</h3><p class="muted">${esc(t.descricao||"Trilha de desenvolvimento por competências.")}</p></div><div class="trail-actions"><button class="button secondary small" data-toggle-trail="${esc(key)}">${expanded?"Minimizar":"Ver competências"}</button><button class="button primary small" data-add-trail="${esc(key)}">Adicionar trilha</button></div></div><div class="trail-summary"><div class="progress"><span style="width:${pct}%"></span></div><strong>${pct}%</strong></div><div class="trail-details ${expanded?"":"hidden"}">${comps.length?`<div class="trail-competencies">${comps.map(c=>`<section class="trail-competency-block ${categoryClass(c.categoria)}"><div class="trail-item"><div class="trail-item-title"><div class="trail-title-line"><strong>${esc(c.competencia)}</strong>${favoriteButton(c.competencia,true)}</div><small>${c.niveis.length} níveis disponíveis</small></div><select data-assess="${esc(c.competencia)}">${assessOptions(c.competencia)}</select><div class="trail-item-actions"><button class="button secondary small" data-view-competency="${esc(c.competencia)}">Visualizar</button></div></div><div class="trail-levels">${c.niveis.map(n=>`<div class="trail-level-row"><div><strong>${esc(n.nivel)}</strong><small>${esc(nivelTitle(n))}</small></div><button class="button primary small" data-add-level="${esc(c.competencia)}" data-level="${esc(n.nivel)}">Adicionar nível</button></div>`).join("")}</div></section>`).join("")}</div>`:empty("Sem competências","Nenhuma competência está vinculada a esta trilha.")}</div></article>`}).join("")}</div>`}
-function filteredHeatCatalog(){const f=filters.heat;return activeCatalog().filter(c=>{const hay=norm(`${c.competencia} ${c.categoria} ${c.trilha} ${c.niveis.map(n=>`${n.nivel} ${nivelTitle(n)}`).join(" ")}`);return(!f.q||hay.includes(norm(f.q)))&&(!f.category||c.categoria===f.category)&&(!f.trail||c.trilha===f.trail)&&(!f.assessment||assessmentKey(c.competencia)===f.assessment)})}
+ return`<div class="trail-list">${trails.map(t=>{const key=`${t.categoria}|||${t.nome}`,comps=activeCatalog().filter(c=>(c.trilhas||[c.trilha]).includes(t.nome)&&(c.categorias||[c.categoria]).includes(t.categoria)),complete=comps.filter(c=>assessmentKey(c.competencia)==="4"||completedLevels(c.competencia).size>=c.niveis.length).length,pct=percent(complete,comps.length),expanded=!!state.expandedTrails[key];return`<article class="trail-card"><div class="trail-header"><div><div class="tag-row"><span class="tag category">${esc(t.categoria)}</span><span class="tag">${comps.length} competências</span></div><h3>${esc(t.nome)}</h3><p class="muted">${esc(t.descricao||"Trilha de desenvolvimento por competências.")}</p></div><div class="trail-actions"><button class="button secondary small" data-toggle-trail="${esc(key)}">${expanded?"Minimizar":"Ver competências"}</button><button class="button primary small" data-add-trail="${esc(key)}">Adicionar trilha</button></div></div><div class="trail-summary"><div class="progress"><span style="width:${pct}%"></span></div><strong>${pct}%</strong></div><div class="trail-details ${expanded?"":"hidden"}">${comps.length?`<div class="trail-competencies">${comps.map(c=>`<section class="trail-competency-block ${categoryClass(c.categoria)}"><div class="trail-item"><div class="trail-item-title"><div class="trail-title-line"><strong>${esc(c.competencia)}</strong>${favoriteButton(c.competencia,true)}</div><small>${c.niveis.length} níveis disponíveis</small></div><select data-assess="${esc(c.competencia)}">${assessOptions(c.competencia)}</select><div class="trail-item-actions"><button class="button secondary small" data-view-competency="${esc(c.competencia)}">Visualizar</button></div></div><div class="trail-levels">${c.niveis.map(n=>`<div class="trail-level-row"><div><strong>${esc(n.nivel)}</strong><small>${esc(nivelTitle(n))}</small></div><button class="button primary small" data-add-level="${esc(c.competencia)}" data-level="${esc(n.nivel)}">Adicionar nível</button></div>`).join("")}</div></section>`).join("")}</div>`:empty("Sem competências","Nenhuma competência está vinculada a esta trilha.")}</div></article>`}).join("")}</div>`}
+function filteredHeatCatalog(){const f=filters.heat;return activeCatalog().filter(c=>{const hay=norm(`${c.competencia} ${c.categoria} ${c.trilha} ${c.niveis.map(n=>`${n.nivel} ${nivelTitle(n)}`).join(" ")}`);return(!f.q||hay.includes(norm(f.q)))&&(!f.category||c.categoria===f.category)&&(!f.trail||(c.trilhas||[c.trilha]).includes(f.trail))&&(!f.assessment||assessmentKey(c.competencia)===f.assessment)})}
 function categoryScoreCards(){return activeCategories().map(cat=>{const score=categoryAssessment(cat);return`<div class="evolution-category-card ${categoryClass(cat)}"><small>${esc(cat)}</small><strong>${score===null?"—":score.toFixed(1)}</strong><span class="muted">${score===null?"sem autoavaliações":"média de autoavaliação / 4"}</span></div>`}).join("")}
 function activeCategories(){return unique(activeCatalog().map(c=>c.categoria))}
 function renderHeatmap(){
@@ -153,10 +153,51 @@ function deleteItem(){const id=el("item-id").value,item=state.planning.find(p=>p
 function addCompetencyToPlan(name){const c=activeCatalog().find(x=>x.competencia===name);if(!c)return;let added=0;c.niveis.forEach((n,i)=>{if(i===0&&!state.planning.some(p=>p.competency===name&&p.level===n.nivel&&p.status!=="cancelado")){state.planning.push(makeLevelItem(c,n));added++}});if(added){addHistory("planning",`Competência adicionada: ${name}`,"Primeiro nível");saveState();toast("Competência adicionada ao planejamento.")}else toast("Esta competência já está no planejamento.")}
 function makeLevelItem(c,n){return{id:uid(),type:"nivel",studyType:"Competência",title:`${c.competencia} — ${n.nivel}`,status:"standby",priority:"media",start:"",deadline:"",notes:"",competency:c.competencia,level:n.nivel,category:c.categoria,trail:c.trilha,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()}}
 function openTrailDialog(key){const[,name]=key.split("|||");el("trail-dialog-key").value=key;el("trail-dialog-title").textContent=`Adicionar ${name}`;el("trail-selected-level").innerHTML=LEVELS.map(x=>`<option>${x}</option>`).join("");el("trail-add-mode").value="primeiro";el("trail-level-wrapper").classList.add("hidden");el("trail-dialog").showModal()}
-function confirmAddTrail(){const key=el("trail-dialog-key").value,[cat,tr]=key.split("|||"),mode=el("trail-add-mode").value,selected=el("trail-selected-level").value,comps=activeCatalog().filter(c=>c.categoria===cat&&c.trilha===tr);let added=0;comps.forEach(c=>{let levels=mode==="todos"?c.niveis:mode==="escolhido"?c.niveis.filter(n=>n.nivel===selected):c.niveis.slice(0,1);levels.forEach(n=>{if(!state.planning.some(p=>p.competency===c.competencia&&p.level===n.nivel&&p.status!=="cancelado")){state.planning.push(makeLevelItem(c,n));added++}})});if(added){addHistory("planning",`Trilha adicionada: ${tr}`,`${added} níveis`);saveState();toast(`${added} item(ns) adicionados.`)}else toast("Nenhum novo item para adicionar.");el("trail-dialog").close();render()}
+function confirmAddTrail(){const key=el("trail-dialog-key").value,[cat,tr]=key.split("|||"),mode=el("trail-add-mode").value,selected=el("trail-selected-level").value,comps=activeCatalog().filter(c=>(c.categorias||[c.categoria]).includes(cat)&&(c.trilhas||[c.trilha]).includes(tr));let added=0;comps.forEach(c=>{let levels=mode==="todos"?c.niveis:mode==="escolhido"?c.niveis.filter(n=>n.nivel===selected):c.niveis.slice(0,1);levels.forEach(n=>{if(!state.planning.some(p=>p.competency===c.competencia&&p.level===n.nivel&&p.status!=="cancelado")){state.planning.push(makeLevelItem(c,n));added++}})});if(added){addHistory("planning",`Trilha adicionada: ${tr}`,`${added} níveis`);saveState();toast(`${added} item(ns) adicionados.`)}else toast("Nenhum novo item para adicionar.");el("trail-dialog").close();render()}
 function formatDate(v){return v?new Date(`${v}T12:00:00`).toLocaleDateString("pt-BR"):""}
 function formatDateTime(v){return new Date(v).toLocaleDateString("pt-BR",{day:"2-digit",month:"short",year:"numeric"})}
-async function importExcel(file){if(!window.XLSX)throw new Error("Biblioteca de Excel indisponível.");const buffer=await file.arrayBuffer(),book=XLSX.read(buffer,{type:"array"}),read=n=>{const s=book.Sheets[n];if(!s)throw new Error(`A aba ${n} não foi encontrada.`);return XLSX.utils.sheet_to_json(s,{defval:""})},truth=v=>v===true||String(v).toUpperCase()==="VERDADEIRO"||String(v).toUpperCase()==="TRUE"||v===1,cats=read("01_Categorias"),trails=read("02_Trilhas"),rows=read("03_Catalogo"),map=new Map;rows.filter(r=>r.Competencia&&truth(r.Ativo)).forEach(r=>{const key=`${r.Categoria}|||${r.Trilha}|||${r.Competencia}`;if(!map.has(key))map.set(key,{categoria:r.Categoria,trilha:r.Trilha,competencia:r.Competencia,descricaoCompetencia:r.Descricao_Competencia,ordemCompetencia:Number(r.Ordem_Competencia)||999,ativo:true,niveis:[]});map.get(key).niveis.push({nivel:r.Nivel,ordem:Number(r.Ordem_Nivel)||999,descricao:r.Descricao_Nivel,criterios:r.Criterios_Conhecimento,conteudos:r.Conteudos_Estudo,cursos:r.Cursos_Sugeridos,certificacoes:r.Certificacoes_Sugeridas,livros:r.Livros_Documentacoes,links:r.Links_Referencias,observacoes:r.Observacoes})});const converted={version:new Date().toISOString(),categorias:cats.filter(r=>r.Nome_Categoria&&truth(r.Ativo)).map(r=>({nome:r.Nome_Categoria,descricao:r.Descricao,icone:r.Icone,ordem:Number(r.Ordem)||999,ativo:true})),trilhas:trails.filter(r=>r.Nome_Trilha&&truth(r.Ativo)).map(r=>({categoria:r.Categoria,nome:r.Nome_Trilha,descricao:r.Descricao,ordem:Number(r.Ordem)||999,ativo:true})),catalogo:[...map.values()]};if(!converted.catalogo.length)throw new Error("Nenhuma competência ativa encontrada.");saveCatalog(converted);addHistory("import","Catálogo atualizado",`${converted.catalogo.length} competências importadas`);saveState();toast(`Catálogo importado: ${converted.catalogo.length} competências.`);render()}
+async function importExcel(file){
+ if(!window.XLSX)throw new Error("Biblioteca de Excel indisponível.");
+ const buffer=await file.arrayBuffer(),book=XLSX.read(buffer,{type:"array"});
+ const read=n=>{const s=book.Sheets[n];if(!s)throw new Error(`A aba ${n} não foi encontrada.`);return XLSX.utils.sheet_to_json(s,{defval:""})};
+ const truth=v=>v===true||String(v).toUpperCase()==="VERDADEIRO"||String(v).toUpperCase()==="TRUE"||v===1;
+ const splitIds=v=>String(v||"").split("|").map(x=>x.trim()).filter(Boolean);
+ const cats=read("01_Categorias"),trailRows=read("02_Trilhas"),rows=read("03_Catalogo");
+ const categories=cats.filter(r=>r.ID_Categoria&&r.Nome_Categoria&&truth(r.Ativo)).map(r=>({
+   idCategoria:r.ID_Categoria,nome:r.Nome_Categoria,descricao:r.Descricao,icone:r.Icone,ordem:Number(r.Ordem)||999,ativo:true
+ }));
+ const categoryById=Object.fromEntries(categories.map(c=>[c.idCategoria,c]));
+ const trails=trailRows.filter(r=>r.ID_Trilha&&r.Nome_Trilha&&truth(r.Ativo)).map(r=>({
+   idTrilha:r.ID_Trilha,categoriaId:r.ID_Categoria,categoria:categoryById[r.ID_Categoria]?.nome||"",
+   nome:r.Nome_Trilha,descricao:r.Descricao,idsCompetencias:splitIds(r.IDs_Competencias),ordem:Number(r.Ordem)||999,ativo:true
+ }));
+ const map=new Map;
+ rows.filter(r=>r.ID_Catalogo&&r.ID_Competencia&&r.Competencia&&truth(r.Ativo)).forEach(r=>{
+   const id=r.ID_Competencia;
+   if(!map.has(id))map.set(id,{
+     idCompetencia:id,categoriaId:r.ID_Categoria_Principal,categoria:categoryById[r.ID_Categoria_Principal]?.nome||"",
+     competencia:r.Competencia,descricaoCompetencia:r.Descricao_Competencia,ordemCompetencia:Number(r.Ordem_Competencia)||999,
+     ativo:true,niveis:[]
+   });
+   map.get(id).niveis.push({
+     idCatalogo:r.ID_Catalogo,nivel:r.Nivel,ordem:Number(r.Ordem_Nivel)||999,descricao:r.Descricao_Nivel,
+     criterios:r.Criterios_Conhecimento,conteudos:r.Conteudos_Estudo,cursos:r.Cursos_Sugeridos,
+     certificacoes:r.Certificacoes_Sugeridas,livros:r.Livros_Documentacoes,links:r.Links_Referencias,observacoes:r.Observacoes
+   });
+ });
+ const catalog=[...map.values()];
+ catalog.forEach(c=>{
+   const related=trails.filter(t=>t.idsCompetencias.includes(c.idCompetencia));
+   c.trilhas=related.map(t=>t.nome);
+   c.categorias=[...new Set(related.map(t=>t.categoria).filter(Boolean).concat(c.categoria||[]))];
+   c.trilha=c.trilhas[0]||"";
+   c.niveis.sort((a,b)=>a.ordem-b.ordem);
+ });
+ if(!catalog.length)throw new Error("Nenhuma competência ativa encontrada no novo modelo.");
+ const converted={version:new Date().toISOString(),modelo:"IDs_Competencias_na_Trilha",separadorIDs:"|",categorias:categories,trilhas,catalogo:catalog};
+ saveCatalog(converted);addHistory("import","Catálogo atualizado",`${catalog.length} competências importadas`);
+ saveState();toast(`Catálogo importado: ${catalog.length} competências.`);render()
+}
 function download(name,content,type="application/json"){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();URL.revokeObjectURL(a.href)}
 document.addEventListener("DOMContentLoaded",async()=>{try{baseData=await loadBaseData();init()}catch(err){document.body.innerHTML=`<div class="empty"><strong>Erro ao abrir o Climb Map</strong>${esc(err.message)}</div>`}
  el("onboarding-form").onsubmit=e=>{e.preventDefault();state.profileName=el("profile-name").value.trim();saveState();showApp()};
