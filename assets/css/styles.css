@@ -99,3 +99,33 @@ dialog{border:0;border-radius:20px;padding:0;background:var(--panel);color:var(-
 @media(max-width:1250px){.filter-panel-no-action,.planning-filters.filter-panel-no-action{grid-template-columns:repeat(4,minmax(150px,1fr))}}
 @media(max-width:900px){.filter-panel-no-action,.planning-filters.filter-panel-no-action{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.filter-panel-no-action,.planning-filters.filter-panel-no-action{grid-template-columns:1fr}.heatmap-competency{left:125px}}
+
+/* Ajuste final: cards de autoavaliação por categoria lado a lado */
+.evolution-category-grid{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:14px;
+  margin:20px 0;
+  align-items:stretch;
+}
+.evolution-category-grid .evolution-category-card{
+  min-width:0;
+  min-height:118px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.evolution-category-grid .evolution-category-card strong{
+  font-size:1.65rem;
+  line-height:1;
+  margin:10px 0 8px;
+}
+@media(max-width:1100px){
+  .evolution-category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .evolution-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:480px){
+  .evolution-category-grid{grid-template-columns:1fr}
+}
