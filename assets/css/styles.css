@@ -3,12 +3,12 @@
   --bg:#f2f5f8;--panel:#fff;--panel-2:#f7f9fb;--text:#172331;--muted:#667786;
   --line:#d9e2e9;--primary:#1f6672;--primary-dark:#164c56;--accent:#dcefed;
   --success:#2c7a52;--warning:#b87513;--danger:#b23a48;--shadow:0 10px 28px rgba(22,34,48,.07);
-  --radius:18px;--heat-na:#edf1f4;--heat-0:#d8e1e7;--heat-1:#c5dcda;--heat-2:#90c8c2;--heat-3:#4f9e9a;--heat-4:#1c666f;
+  --radius:18px;--heat-na:#ffffff;--heat-0:#e9dfcc;--heat-1:#f3a36b;--heat-2:#cd5b51;--heat-3:#554865;--heat-4:#352630;
 }
 [data-theme="dark"]{
   --bg:#111820;--panel:#18222d;--panel-2:#202c38;--text:#eef4f6;--muted:#a7b5c0;
   --line:#32404d;--primary:#62b8bd;--primary-dark:#88d0d3;--accent:#203b3d;
-  --shadow:0 12px 34px rgba(0,0,0,.25);--heat-na:#26323d;--heat-0:#394854;
+  --shadow:0 12px 34px rgba(0,0,0,.25);--heat-na:#ffffff;--heat-0:#e9dfcc;
 }
 *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
 button,input,select,textarea{font:inherit}.hidden{display:none!important}.muted{color:var(--muted)}.eyebrow{margin:0 0 6px;font-size:.72rem;letter-spacing:.16em;font-weight:800;color:var(--primary)}
@@ -41,3 +41,12 @@ dialog{border:0;border-radius:20px;padding:0;background:var(--panel);color:var(-
 @media(max-width:1250px){.filter-panel,.filter-panel.planning-filters{grid-template-columns:repeat(4,minmax(150px,1fr))}.filter-panel .wide{grid-column:span 2}.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mini-heatmap{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.metric-grid{grid-template-columns:repeat(2,1fr)}.dashboard-grid{grid-template-columns:1fr}.trail-item{grid-template-columns:1fr}.trail-item-actions{justify-content:flex-start}.filter-panel,.filter-panel.planning-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filter-panel .wide{grid-column:span 2}.mini-heatmap{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:720px){.app{grid-template-columns:1fr}.sidebar{height:auto;position:sticky;z-index:10;padding:12px;top:0}.brand{padding:0 4px 10px}.brand small,.sidebar-footer{display:none}nav{display:flex;overflow:auto}.nav-item{white-space:nowrap;padding:9px 11px}.topbar{padding:16px}.content{padding:18px}.topbar .eyebrow{display:none}.topbar h1{font-size:1.25rem}.button{padding:9px 11px}.metric-grid,.catalog-grid{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero-stat{text-align:left}.form-grid{grid-template-columns:1fr}.dialog-actions{grid-template-columns:1fr 1fr}.dialog-actions span{display:none}.filter-panel,.filter-panel.planning-filters{grid-template-columns:1fr}.filter-panel .wide{grid-column:auto}.mini-heatmap{grid-template-columns:repeat(2,1fr)}}
+
+/* V3 */
+.topbar-actions{align-items:center}.filter-panel>.button{align-self:end;height:42px;margin:0}
+.category-accent{position:relative;overflow:hidden}.category-accent::before{content:"";position:absolute;inset:0 auto 0 0;width:6px;background:var(--category-color,#d9e2e9)}.category-badge{background:color-mix(in srgb,var(--category-color,#d9e2e9) 22%,var(--panel));color:var(--text)}
+.category-Dados{--category-color:#8ecf9b}.category-Processos{--category-color:#8fb7e8}.category-Sistemas{--category-color:#e6cf77}.category-Cyber-Seguranca{--category-color:#d78d9a}.category-Lideranca-e-Organizacao{--category-color:#b8a4dd}
+.clickable-card{cursor:pointer}.clickable-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(22,34,48,.12)}
+.heatmap-matrix-wrap{overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.heatmap-matrix{display:grid;grid-template-columns:minmax(210px,1.5fr) repeat(5,minmax(105px,.8fr));min-width:820px}.heatmap-matrix>div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:7px 8px;min-height:42px}.heatmap-header{position:sticky;top:0;z-index:2;background:var(--panel);font-size:.78rem;font-weight:800;display:flex;align-items:center;justify-content:center;text-align:center}.heatmap-competency{position:sticky;left:0;z-index:1;background:var(--panel);font-size:.78rem;font-weight:800;display:flex;align-items:center}.heatmap-cell{display:flex;align-items:center;justify-content:center;text-align:center;font-size:.68rem;font-weight:800;cursor:pointer;transition:.15s}.heatmap-cell:hover{outline:2px solid var(--primary);outline-offset:-2px}
+.heat-na{background:#fff;color:var(--text)}.heat-0{background:#e9dfcc;color:#382f26}.heat-1{background:#f3a36b;color:#3d2414}.heat-2{background:#cd5b51;color:#fff}.heat-3{background:#554865;color:#fff}.heat-4{background:#352630;color:#fff}.assess-na{background:#fff;color:var(--muted);border:1px solid var(--line)}.assess-0{background:#e9dfcc;color:#382f26}.assess-1{background:#f3a36b;color:#3d2414}.assess-2{background:#cd5b51;color:#fff}.assess-3{background:#554865;color:#fff}.assess-4{background:#352630;color:#fff}
+.backup-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.backup-option{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--panel-2)}.backup-option h3{margin:0 0 8px}.warning-box{border-color:#d7b86b}@media(max-width:720px){.backup-grid{grid-template-columns:1fr}}

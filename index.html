@@ -50,6 +50,7 @@
         <div><p class="eyebrow">CLIMB MAP</p><h1 id="page-title">Meu Mapa</h1></div>
         <div class="topbar-actions">
           <button id="import-button" class="button secondary">Importar Excel</button>
+          <button id="backup-button" class="icon-button" title="Backup e restauração">⚙</button>
           <button id="theme-button" class="icon-button" title="Alternar tema">◐</button>
         </div>
       </header>
@@ -157,6 +158,17 @@
         <span></span>
         <button type="button" id="export-backup" class="button secondary">Exportar backup</button>
         <button type="submit" id="save-settings" class="button primary">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+
+  <dialog id="backup-dialog">
+    <form method="dialog">
+      <div class="dialog-header"><div><p class="eyebrow">BACKUP E RESTAURAÇÃO</p><h2>Transferir todos os dados</h2></div><button type="button" class="icon-button close-backup">×</button></div>
+      <div class="backup-grid">
+        <section class="backup-option"><h3>Download completo</h3><p class="muted">Baixe perfil, autoavaliações, planejamento, histórico, preferências e catálogo em um único arquivo JSON.</p><button type="button" id="download-full-backup" class="button primary">Baixar backup completo</button></section>
+        <section class="backup-option warning-box"><h3>Upload total</h3><p class="muted">O arquivo enviado substituirá todos os dados atualmente ativos neste navegador.</p><input id="full-backup-input" type="file" accept=".json" hidden><button type="button" id="upload-full-backup" class="button secondary">Selecionar backup</button></section>
       </div>
     </form>
   </dialog>

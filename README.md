@@ -46,3 +46,12 @@ A base oficial foi gerada a partir de `ClimbMap_Preenchido.xlsx`.
 ## Observação importante
 
 Os dados pessoais ficam no navegador. O catálogo oficial está publicado em `data/catalogo.json`.
+
+
+## Novidades da V3
+
+- Backup completo por download e restauração total por upload.
+- Cards clicáveis em Meu Mapa, Heatmap e Evolução.
+- Cores leves por categoria no Catálogo.
+- Heatmap em matriz: competências nas linhas e níveis nas colunas.
+- Escala personalizada de cores.
