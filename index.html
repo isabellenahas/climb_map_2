@@ -16,8 +16,7 @@
       <p class="eyebrow">CLIMB MAP</p>
       <h1>Seu mapa de crescimento profissional</h1>
       <p class="muted">Crie seu perfil local. Seus dados pessoais permanecem somente neste navegador.</p>
-      <label>
-        Como você quer ser chamada?
+      <label>Como você quer ser chamada?
         <input id="profile-name" required maxlength="60" placeholder="Ex.: Isabelle">
       </label>
       <button class="button primary" type="submit">Começar</button>
@@ -30,15 +29,14 @@
         <span class="brand-symbol">CM</span>
         <div><strong>Climb Map</strong><small>Mapa de carreira</small></div>
       </div>
-
       <nav id="navigation">
         <button class="nav-item active" data-route="mapa"><span>◫</span> Meu Mapa</button>
         <button class="nav-item" data-route="catalogo"><span>⌕</span> Catálogo</button>
         <button class="nav-item" data-route="planejamento"><span>▦</span> Planejamento</button>
         <button class="nav-item" data-route="trilhas"><span>↗</span> Trilhas</button>
+        <button class="nav-item" data-route="heatmap"><span>▥</span> Heatmap</button>
         <button class="nav-item" data-route="evolucao"><span>⌁</span> Evolução</button>
       </nav>
-
       <div class="sidebar-footer">
         <button id="open-settings" class="profile-button">
           <span class="avatar" id="avatar">I</span>
@@ -49,10 +47,7 @@
 
     <main>
       <header class="topbar">
-        <div>
-          <p class="eyebrow">CLIMB MAP</p>
-          <h1 id="page-title">Meu Mapa</h1>
-        </div>
+        <div><p class="eyebrow">CLIMB MAP</p><h1 id="page-title">Meu Mapa</h1></div>
         <div class="topbar-actions">
           <button id="import-button" class="button secondary">Importar Excel</button>
           <button id="theme-button" class="icon-button" title="Alternar tema">◐</button>
@@ -71,17 +66,27 @@
         <button type="button" class="icon-button close-dialog">×</button>
       </div>
       <input type="hidden" id="item-id">
-      <label>Tipo
+      <label>Origem do card
         <select id="item-type">
           <option value="manual">Card manual</option>
           <option value="nivel">Nível de competência</option>
         </select>
       </label>
+      <div id="manual-fields">
+        <label>Tipo de estudo
+          <select id="item-study-type">
+            <option value="Curso">Curso</option>
+            <option value="Certificação">Certificação</option>
+            <option value="Conteúdo">Conteúdo</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </label>
+      </div>
       <div id="competency-fields" class="hidden">
         <label>Competência<select id="item-competency"></select></label>
         <label>Nível<select id="item-level"></select></label>
       </div>
-      <label>Título<input id="item-title" required maxlength="120"></label>
+      <label>Título<input id="item-title" required maxlength="140"></label>
       <div class="form-grid">
         <label>Status
           <select id="item-status">
@@ -110,6 +115,32 @@
         <span></span>
         <button type="button" class="button secondary close-dialog">Cancelar</button>
         <button type="submit" class="button primary">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="trail-dialog">
+    <form method="dialog">
+      <div class="dialog-header">
+        <div><p class="eyebrow">ADICIONAR TRILHA</p><h2 id="trail-dialog-title">Adicionar ao planejamento</h2></div>
+        <button type="button" class="icon-button close-trail-dialog">×</button>
+      </div>
+      <input type="hidden" id="trail-dialog-key">
+      <label>Como adicionar?
+        <select id="trail-add-mode">
+          <option value="primeiro">Primeiro nível de cada competência</option>
+          <option value="escolhido">Um nível escolhido para todas</option>
+          <option value="todos">Todos os níveis disponíveis</option>
+        </select>
+      </label>
+      <label id="trail-level-wrapper" class="hidden">Nível desejado
+        <select id="trail-selected-level"></select>
+      </label>
+      <p class="muted">Itens já existentes no planejamento não serão duplicados.</p>
+      <div class="dialog-actions">
+        <span></span><span></span>
+        <button type="button" class="button secondary close-trail-dialog">Cancelar</button>
+        <button type="button" id="confirm-add-trail" class="button primary">Adicionar</button>
       </div>
     </form>
   </dialog>

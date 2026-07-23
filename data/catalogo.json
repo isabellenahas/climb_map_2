@@ -1,264 +1,1370 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "generatedFrom": "ClimbMap_Preenchido.xlsx",
   "categorias": [
     {
       "nome": "Processos",
-      "descricao": "Gestão, desenho, melhoria e governança de processos.",
+      "descricao": "",
+      "icone": "",
       "ordem": 1,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     },
     {
       "nome": "Sistemas",
-      "descricao": "Aplicações, arquitetura, integrações e operação tecnológica.",
+      "descricao": "",
+      "icone": "",
       "ordem": 2,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     },
     {
       "nome": "Dados",
-      "descricao": "Análise, engenharia, visualização e ciência de dados.",
+      "descricao": "",
+      "icone": "",
       "ordem": 3,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     },
     {
       "nome": "Cyber Segurança",
-      "descricao": "Proteção de ativos, riscos e operações de segurança.",
+      "descricao": "",
+      "icone": "",
       "ordem": 4,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     },
     {
       "nome": "Liderança e Organização",
-      "descricao": "Gestão, comunicação, estratégia e desenvolvimento profissional.",
+      "descricao": "",
+      "icone": "",
       "ordem": 5,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     }
   ],
   "trilhas": [
     {
       "categoria": "Dados",
-      "nome": "Business Intelligence",
-      "descricao": "Transformar dados em análises e decisões.",
+      "nome": "SQL",
+      "descricao": "",
       "ordem": 1,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     },
     {
       "categoria": "Dados",
-      "nome": "Ciência de Dados",
-      "descricao": "Desenvolver análises estatísticas e modelos preditivos.",
+      "nome": "Python para Dados",
+      "descricao": "",
       "ordem": 2,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     },
     {
-      "categoria": "Sistemas",
-      "nome": "Arquitetura e Integrações",
-      "descricao": "Compreender sistemas, APIs e integrações.",
-      "ordem": 1,
-      "ativo": true
+      "categoria": "Dados",
+      "nome": "Power BI",
+      "descricao": "",
+      "ordem": 3,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Dados",
+      "nome": "Visualização de Dados",
+      "descricao": "",
+      "ordem": 4,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Dados",
+      "nome": "Modelagem Dimensional",
+      "descricao": "",
+      "ordem": 5,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Dados",
+      "nome": "Data Warehouse e Lakehouse",
+      "descricao": "",
+      "ordem": 6,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Dados",
+      "nome": "Engenharia de Dados",
+      "descricao": "",
+      "ordem": 7,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Dados",
+      "nome": "Governança de Dados",
+      "descricao": "",
+      "ordem": 8,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Dados",
+      "nome": "Estatística para BI",
+      "descricao": "",
+      "ordem": 9,
+      "ativo": true,
+      "observacoes": ""
     },
     {
       "categoria": "Processos",
-      "nome": "Gestão de Processos",
-      "descricao": "Mapear, melhorar e governar processos.",
+      "nome": "Fundamentos de BPM",
+      "descricao": "",
       "ordem": 1,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
     },
     {
-      "categoria": "Liderança e Organização",
-      "nome": "Liderança de Times",
-      "descricao": "Desenvolver capacidade de liderança e organização.",
+      "categoria": "Processos",
+      "nome": "Mapeamento de Processos",
+      "descricao": "",
+      "ordem": 2,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Processos",
+      "nome": "Melhoria Contínua",
+      "descricao": "",
+      "ordem": 3,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Processos",
+      "nome": "Governança e Documentação",
+      "descricao": "",
+      "ordem": 4,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Processos",
+      "nome": "Governança de Processos",
+      "descricao": "",
+      "ordem": 5,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Processos",
+      "nome": "Gestão Estratégica de Processos",
+      "descricao": "",
+      "ordem": 6,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Processos",
+      "nome": "Automatização de Processos",
+      "descricao": "",
+      "ordem": 7,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "Fundamentos de TI",
+      "descricao": "",
       "ordem": 1,
-      "ativo": true
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "ERP e Aplicações Corporativas",
+      "descricao": "",
+      "ordem": 2,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "Integrações e APIs",
+      "descricao": "",
+      "ordem": 3,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "Cloud Computing",
+      "descricao": "",
+      "ordem": 4,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "Segurança de Sistemas",
+      "descricao": "",
+      "ordem": 5,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "Gestão de Projetos",
+      "descricao": "",
+      "ordem": 6,
+      "ativo": true,
+      "observacoes": ""
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "ITIL e Governança de TI",
+      "descricao": "",
+      "ordem": 7,
+      "ativo": true,
+      "observacoes": ""
     }
   ],
   "catalogo": [
     {
       "categoria": "Dados",
-      "trilha": "Business Intelligence",
-      "competencia": "Analisar dados com SQL",
-      "descricaoCompetencia": "Consultar, combinar e transformar dados relacionais para responder perguntas de negócio.",
+      "trilha": "Data Warehouse e Lakehouse",
+      "competencia": "Data Warehouse e Lakehouse",
+      "descricaoCompetencia": "Arquitetura de Data Warehouse e evolução para arquiteturas Lakehouse e Data Mesh.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
-          "nivel": "Fundamentos",
-          "ordem": 1,
-          "descricao": "Compreender bancos relacionais e consultas básicas.",
-          "criterios": "Entende tabelas, colunas, chaves e executa consultas SELECT simples.",
-          "conteudos": "Bancos relacionais\nSELECT e FROM\nWHERE e ORDER BY",
-          "cursos": "",
-          "certificacoes": "",
-          "livros": "Documentação oficial do PostgreSQL",
-          "links": "https://www.postgresql.org/docs/",
-          "observacoes": ""
-        },
-        {
-          "nivel": "Básico",
-          "ordem": 2,
-          "descricao": "Construir consultas com agregações e relacionamentos.",
-          "criterios": "Utiliza JOIN, GROUP BY e funções de agregação.",
-          "conteudos": "JOINs\nGROUP BY\nFunções de agregação",
-          "cursos": "",
-          "certificacoes": "",
-          "livros": "",
-          "links": "",
-          "observacoes": ""
-        },
-        {
           "nivel": "Intermediário",
-          "ordem": 3,
-          "descricao": "Criar consultas analíticas reutilizáveis.",
-          "criterios": "Utiliza CTEs, subconsultas e funções de janela.",
-          "conteudos": "CTEs\nSubconsultas\nWindow functions",
-          "cursos": "",
+          "ordem": 2,
+          "descricao": "Arquitetura de Data Warehouse",
+          "criterios": "Demonstrar conhecimento em: Camadas (Raw, Trusted, Refined/Gold), ODS, staging, data mart, Inmon vs Kimball",
+          "conteudos": "Camadas (Raw, Trusted, Refined/Gold), ODS, staging, data mart, Inmon vs Kimball",
+          "cursos": "Alura – Arquitetura de Dados",
           "certificacoes": "",
-          "livros": "",
+          "livros": "Building the Data Warehouse – Inmon",
           "links": "",
-          "observacoes": ""
+          "observacoes": "Pré-requisito: Modelagem dimensional | Carga horária estimada: 25h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Arquitetura Lakehouse e Data Mesh",
+          "criterios": "Demonstrar conhecimento em: Delta Lake, Apache Iceberg, Databricks, separação storage/compute, Data Mesh e domínios de dados",
+          "conteudos": "Delta Lake, Apache Iceberg, Databricks, separação storage/compute, Data Mesh e domínios de dados",
+          "cursos": "Databricks Academy (gratuito)",
+          "certificacoes": "",
+          "livros": "Fundamentals of Data Engineering – Reis",
+          "links": "",
+          "observacoes": "Pré-requisito: Arquitetura DW + Cloud | Carga horária estimada: 40h"
         }
       ]
     },
     {
       "categoria": "Dados",
-      "trilha": "Business Intelligence",
-      "competencia": "Desenvolver modelos e dashboards com Power BI",
-      "descricaoCompetencia": "Construir modelos semânticos, indicadores e visualizações para apoiar decisões.",
+      "trilha": "Engenharia de Dados",
+      "competencia": "Engenharia de Dados",
+      "descricaoCompetencia": "Construção de pipelines de dados e engenharia de dados em escala.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Fundamentos de pipelines de dados",
+          "criterios": "Demonstrar conhecimento em: ETL vs ELT, orquestração com Airflow, dbt (data build tool), qualidade e testes de dados",
+          "conteudos": "ETL vs ELT, orquestração com Airflow, dbt (data build tool), qualidade e testes de dados",
+          "cursos": "DataTalks – Data Engineering Zoomcamp (gratuito)\ndbt Learn (gratuito)",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: SQL intermediário + Python | Carga horária estimada: 50h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Engenharia de dados em escala",
+          "criterios": "Demonstrar conhecimento em: Spark, Kafka, streaming vs batch, arquitetura Lambda/Kappa, SLAs de dados",
+          "conteudos": "Spark, Kafka, streaming vs batch, arquitetura Lambda/Kappa, SLAs de dados",
+          "cursos": "Coursera – Big Data Specialization",
+          "certificacoes": "",
+          "livros": "Designing Data-Intensive Applications – Kleppmann",
+          "links": "",
+          "observacoes": "Pré-requisito: Pipelines + Cloud | Carga horária estimada: 60h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Estatística para BI",
+      "competencia": "Estatística para BI",
+      "descricaoCompetencia": "Estatística descritiva, inferencial e analytics avançado (forecasting) para BI.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Estatística descritiva",
+          "criterios": "Demonstrar conhecimento em: Média, mediana, moda, desvio padrão, distribuições, correlação, gráficos exploratórios",
+          "conteudos": "Média, mediana, moda, desvio padrão, distribuições, correlação, gráficos exploratórios",
+          "cursos": "Khan Academy – Statistics (gratuito)",
+          "certificacoes": "",
+          "livros": "Estatística Básica – Bussab & Morettin",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 25h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Estatística inferencial e probabilidade",
+          "criterios": "Demonstrar conhecimento em: Testes de hipótese, intervalos de confiança, p-valor, regressão linear, ANOVA",
+          "conteudos": "Testes de hipótese, intervalos de confiança, p-valor, regressão linear, ANOVA",
+          "cursos": "Coursera – Statistics with Python",
+          "certificacoes": "",
+          "livros": "Estatística Aplicada – Montgomery",
+          "links": "",
+          "observacoes": "Pré-requisito: Estatística descritiva | Carga horária estimada: 30h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Analytics avançado e forecasting",
+          "criterios": "Demonstrar conhecimento em: Séries temporais (ARIMA, Prophet), análise de coorte, A/B testing, atribuição de marketing",
+          "conteudos": "Séries temporais (ARIMA, Prophet), análise de coorte, A/B testing, atribuição de marketing",
+          "cursos": "Coursera – Forecasting",
+          "certificacoes": "",
+          "livros": "Forecasting: Principles and Practice – Hyndman (gratuito online)",
+          "links": "",
+          "observacoes": "Pré-requisito: Estatística inferencial + Python | Carga horária estimada: 40h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Governança de Dados",
+      "competencia": "Governança e Qualidade de Dados",
+      "descricaoCompetencia": "Qualidade de dados, LGPD e catalogação/linhagem de dados (Data Catalog e Lineage).",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Conceitos de governança e qualidade de dados",
+          "criterios": "Demonstrar conhecimento em: Data quality dimensions, master data management (MDM), catálogo de dados, glossário de negócios",
+          "conteudos": "Data quality dimensions, master data management (MDM), catálogo de dados, glossário de negócios",
+          "cursos": "Udemy – Data Governance",
+          "certificacoes": "",
+          "livros": "Data Management Body of Knowledge – DAMA DMBOK",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "LGPD e privacidade de dados",
+          "criterios": "Demonstrar conhecimento em: Bases legais, direitos do titular, DPIA, anonimização e pseudonimização, papel do DPO, adequação em BI",
+          "conteudos": "Bases legais, direitos do titular, DPIA, anonimização e pseudonimização, papel do DPO, adequação em BI",
+          "cursos": "FGV Online – LGPD",
+          "certificacoes": "",
+          "livros": "LGPD Comentada – Cots & Oliveira",
+          "links": "",
+          "observacoes": "Pré-requisito: Governança básica | Carga horária estimada: 15h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Data Catalog e Data Lineage",
+          "criterios": "Demonstrar conhecimento em: Ferramentas (Azure Purview, Atlan, OpenMetadata), catalogação ativa, lineage end-to-end, data stewardship",
+          "conteudos": "Ferramentas (Azure Purview, Atlan, OpenMetadata), catalogação ativa, lineage end-to-end, data stewardship",
+          "cursos": "Microsoft Learn – Azure Purview",
+          "certificacoes": "",
+          "livros": "",
+          "links": "Ferramenta: OpenMetadata Docs",
+          "observacoes": "Pré-requisito: LGPD + Arquitetura DW | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Governança de Dados",
+      "competencia": "ISO 27001 Aplicada a Dados e BI",
+      "descricaoCompetencia": "Controles de segurança da informação (ISO 27001) aplicados a dados analíticos e BI.",
       "ordemCompetencia": 2,
       "ativo": true,
       "niveis": [
         {
-          "nivel": "Fundamentos",
-          "ordem": 1,
-          "descricao": "Conhecer o fluxo básico do Power BI.",
-          "criterios": "Importa dados, cria visuais e publica um relatório simples.",
-          "conteudos": "Power Query\nModelo de dados\nVisuais básicos",
-          "cursos": "Microsoft Learn — Power BI",
-          "certificacoes": "",
-          "livros": "",
-          "links": "https://learn.microsoft.com/power-bi/",
-          "observacoes": ""
-        },
-        {
-          "nivel": "Básico",
+          "nivel": "Intermediário",
           "ordem": 2,
-          "descricao": "Criar modelos e medidas básicas.",
-          "criterios": "Organiza relacionamentos e escreve medidas DAX básicas.",
-          "conteudos": "Relacionamentos\nModelo estrela\nDAX básico",
-          "cursos": "",
-          "certificacoes": "Microsoft Power BI Data Analyst",
-          "livros": "",
+          "descricao": "ISO 27001 aplicada a dados e BI",
+          "criterios": "Demonstrar conhecimento em: Controles de segurança para dados analíticos, classificação de dados, gestão de incidentes de dados, auditoria",
+          "conteudos": "Controles de segurança para dados analíticos, classificação de dados, gestão de incidentes de dados, auditoria",
+          "cursos": "Udemy – ISO 27001 Foundation",
+          "certificacoes": "",
+          "livros": "ISO 27001 Implementation Guide – IT Governance",
           "links": "",
-          "observacoes": ""
+          "observacoes": "Pré-requisito: LGPD dados + Segurança sistemas | Carga horária estimada: 20h"
         }
       ]
     },
     {
       "categoria": "Dados",
-      "trilha": "Ciência de Dados",
-      "competencia": "Aplicar estatística em análises de dados",
-      "descricaoCompetencia": "Selecionar e aplicar técnicas estatísticas para interpretar dados e sustentar conclusões.",
+      "trilha": "Modelagem Dimensional",
+      "competencia": "Modelagem Dimensional",
+      "descricaoCompetencia": "Modelagem dimensional de dados (Star Schema) e padrões avançados de Kimball.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
-          "nivel": "Fundamentos",
+          "nivel": "Básico",
           "ordem": 1,
-          "descricao": "Compreender medidas e distribuições básicas.",
-          "criterios": "Interpreta média, mediana, dispersão e distribuições.",
-          "conteudos": "Estatística descritiva\nVariabilidade\nDistribuições",
-          "cursos": "",
+          "descricao": "Conceitos de modelagem dimensional",
+          "criterios": "Demonstrar conhecimento em: Fatos e dimensões, granularidade, chaves surrogate, hierarquias, Star Schema vs Snowflake",
+          "conteudos": "Fatos e dimensões, granularidade, chaves surrogate, hierarquias, Star Schema vs Snowflake",
+          "cursos": "Udemy – Data Warehouse para BI",
           "certificacoes": "",
-          "livros": "Practical Statistics for Data Scientists",
+          "livros": "The Data Warehouse Toolkit – Kimball",
           "links": "",
-          "observacoes": ""
+          "observacoes": "Pré-requisito: SQL básico | Carga horária estimada: 25h"
         },
         {
-          "nivel": "Básico",
+          "nivel": "Intermediário",
           "ordem": 2,
-          "descricao": "Realizar inferências e testes básicos.",
-          "criterios": "Formula hipóteses e interpreta intervalos e testes.",
-          "conteudos": "Amostragem\nIntervalo de confiança\nTeste de hipótese",
-          "cursos": "",
+          "descricao": "Modelagem avançada e padrões Kimball",
+          "criterios": "Demonstrar conhecimento em: SCDs (Slowly Changing Dimensions), Bridge tables, factless fact tables, dimensões conformadas",
+          "conteudos": "SCDs (Slowly Changing Dimensions), Bridge tables, factless fact tables, dimensões conformadas",
+          "cursos": "Coursera – Data Warehousing",
           "certificacoes": "",
-          "livros": "",
+          "livros": "The Data Warehouse Toolkit – Kimball (cap. avançados)",
           "links": "",
-          "observacoes": ""
+          "observacoes": "Pré-requisito: Modelagem básica | Carga horária estimada: 25h"
         }
       ]
     },
     {
-      "categoria": "Sistemas",
-      "trilha": "Arquitetura e Integrações",
-      "competencia": "Projetar integrações por APIs",
-      "descricaoCompetencia": "Definir e documentar integrações seguras e sustentáveis entre sistemas.",
+      "categoria": "Dados",
+      "trilha": "Power BI",
+      "competencia": "Power BI",
+      "descricaoCompetencia": "Modelagem, DAX e arquitetura de soluções analíticas em Power BI.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
-          "nivel": "Fundamentos",
+          "nivel": "Básico",
           "ordem": 1,
-          "descricao": "Compreender conceitos de integração e APIs.",
-          "criterios": "Diferencia API, webhook, arquivo e integração direta.",
-          "conteudos": "HTTP\nREST\nJSON\nAutenticação",
-          "cursos": "",
+          "descricao": "Power BI Desktop – básico",
+          "criterios": "Demonstrar conhecimento em: Importação de dados, relacionamentos, visuais básicos, publicação no serviço",
+          "conteudos": "Importação de dados, relacionamentos, visuais básicos, publicação no serviço",
+          "cursos": "Microsoft Learn – Power BI Fundamentals (gratuito)\nAlura – Power BI",
           "certificacoes": "",
           "livros": "",
           "links": "",
-          "observacoes": ""
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "DAX – Data Analysis Expressions",
+          "criterios": "Demonstrar conhecimento em: Medidas vs colunas calculadas, contexto de filtro e linha, CALCULATE, FILTER, ALL, RELATED, time intelligence",
+          "conteudos": "Medidas vs colunas calculadas, contexto de filtro e linha, CALCULATE, FILTER, ALL, RELATED, time intelligence",
+          "cursos": "SQLBI – Introducing DAX (gratuito)",
+          "certificacoes": "",
+          "livros": "The Definitive Guide to DAX – Ferrari & Russo",
+          "links": "",
+          "observacoes": "Pré-requisito: Power BI Desktop | Carga horária estimada: 40h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Power BI avançado e arquitetura",
+          "criterios": "Demonstrar conhecimento em: Composite models, DirectQuery vs Import, incremental refresh, Row-Level Security, deployment pipelines, Premium",
+          "conteudos": "Composite models, DirectQuery vs Import, incremental refresh, Row-Level Security, deployment pipelines, Premium",
+          "cursos": "SQLBI – Advanced DAX\nUdemy – Power BI Advanced",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: DAX intermediário | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Python para Dados",
+      "competencia": "Python para Análise de Dados e Machine Learning",
+      "descricaoCompetencia": "Programação em Python para análise de dados com Pandas/NumPy e modelos de Machine Learning.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Python básico",
+          "criterios": "Demonstrar conhecimento em: Variáveis, listas, dicionários, loops, funções, leitura de arquivos CSV/Excel",
+          "conteudos": "Variáveis, listas, dicionários, loops, funções, leitura de arquivos CSV/Excel",
+          "cursos": "Curso em Vídeo – Python (gratuito)",
+          "certificacoes": "",
+          "livros": "Python Crash Course – Eric Matthes",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 30h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Análise de dados com Pandas e NumPy",
+          "criterios": "Demonstrar conhecimento em: DataFrames, filtros, groupby, merge, pivot_table, limpeza e transformação de dados",
+          "conteudos": "DataFrames, filtros, groupby, merge, pivot_table, limpeza e transformação de dados",
+          "cursos": "Kaggle – Pandas (gratuito)",
+          "certificacoes": "",
+          "livros": "Python for Data Analysis – Wes McKinney",
+          "links": "",
+          "observacoes": "Pré-requisito: Python básico | Carga horária estimada: 30h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Machine Learning aplicado a BI",
+          "criterios": "Demonstrar conhecimento em: Regressão, classificação, clustering, Scikit-learn, modelos preditivos para BI e forecasting",
+          "conteudos": "Regressão, classificação, clustering, Scikit-learn, modelos preditivos para BI e forecasting",
+          "cursos": "Coursera – Machine Learning Specialization (Andrew Ng)",
+          "certificacoes": "",
+          "livros": "Hands-On ML – Aurélien Géron",
+          "links": "",
+          "observacoes": "Pré-requisito: Pandas + Estatística | Carga horária estimada: 80h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Python para Dados",
+      "competencia": "Visualização e Automação com Python",
+      "descricaoCompetencia": "Visualização de dados e automação de relatórios usando bibliotecas Python.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Visualização e automação com Python",
+          "criterios": "Demonstrar conhecimento em: Matplotlib, Seaborn, Plotly, automação de relatórios, integração com APIs e bancos de dados",
+          "conteudos": "Matplotlib, Seaborn, Plotly, automação de relatórios, integração com APIs e bancos de dados",
+          "cursos": "DataCamp – Data Visualization in Python\nAlura – Python para BI",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Pandas | Carga horária estimada: 25h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "SQL",
+      "competencia": "SQL",
+      "descricaoCompetencia": "Consultas e manipulação de dados em SQL, do básico à otimização de performance.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "SQL básico",
+          "criterios": "Demonstrar conhecimento em: SELECT, FROM, WHERE, ORDER BY, GROUP BY, HAVING, funções de agregação (SUM, COUNT, AVG)",
+          "conteudos": "SELECT, FROM, WHERE, ORDER BY, GROUP BY, HAVING, funções de agregação (SUM, COUNT, AVG)",
+          "cursos": "Mode Analytics SQL Tutorial (gratuito)\nAlura – SQL com PostgreSQL",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "SQL intermediário",
+          "criterios": "Demonstrar conhecimento em: JOINs, subqueries, CTEs (WITH), window functions (RANK, ROW_NUMBER, LAG/LEAD), índices",
+          "conteudos": "JOINs, subqueries, CTEs (WITH), window functions (RANK, ROW_NUMBER, LAG/LEAD), índices",
+          "cursos": "Codecademy – Advanced SQL",
+          "certificacoes": "",
+          "livros": "Learning SQL – Alan Beaulieu",
+          "links": "",
+          "observacoes": "Pré-requisito: SQL básico | Carga horária estimada: 25h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "SQL avançado e performance",
+          "criterios": "Demonstrar conhecimento em: Execution plan, query optimization, particionamento, materialização de views, SQL em Snowflake/BigQuery",
+          "conteudos": "Execution plan, query optimization, particionamento, materialização de views, SQL em Snowflake/BigQuery",
+          "cursos": "Udemy – Advanced SQL Tuning",
+          "certificacoes": "",
+          "livros": "SQL Performance Explained – Winand",
+          "links": "",
+          "observacoes": "Pré-requisito: SQL intermediário | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Visualização de Dados",
+      "competencia": "Storytelling e Comunicação com Dados",
+      "descricaoCompetencia": "Princípios de design visual, storytelling e comunicação executiva orientada a dados.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Princípios de design visual e escolha de gráficos",
+          "criterios": "Demonstrar conhecimento em: Hierarquia visual, proporção, contraste, tipos de gráfico por finalidade (comparação, distribuição, composição, relacionamento), erros comuns",
+          "conteudos": "Hierarquia visual, proporção, contraste, tipos de gráfico por finalidade (comparação, distribuição, composição, relacionamento), erros comuns",
+          "cursos": "Coursera – Data Visualization (Duke)",
+          "certificacoes": "",
+          "livros": "Storytelling with Data – Cole Nussbaumer Knaflic",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Storytelling com dados",
+          "criterios": "Demonstrar conhecimento em: Estrutura narrativa para dashboards, contexto e insight, clareza vs densidade, design de relatórios executivos",
+          "conteudos": "Estrutura narrativa para dashboards, contexto e insight, clareza vs densidade, design de relatórios executivos",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "Storytelling with Data – Knaflic\nThe Big Picture – Steve Wexler",
+          "links": "",
+          "observacoes": "Pré-requisito: Princípios de design visual | Carga horária estimada: 20h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Dataviz estratégico e comunicação executiva",
+          "criterios": "Demonstrar conhecimento em: Dashboards de C-level, scorecard vs operational dashboard, design orientado a decisão, acessibilidade, revisão crítica de visuais",
+          "conteudos": "Dashboards de C-level, scorecard vs operational dashboard, design orientado a decisão, acessibilidade, revisão crítica de visuais",
+          "cursos": "DataCamp – Dashboard Design Best Practices",
+          "certificacoes": "",
+          "livros": "Information Dashboard Design – Few",
+          "links": "",
+          "observacoes": "Pré-requisito: Storytelling + Power BI ou Tableau intermediário | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Visualização de Dados",
+      "competencia": "Ferramentas de Dataviz (Tableau e Looker)",
+      "descricaoCompetencia": "Construção de dashboards interativos com Tableau e Looker.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Ferramentas de dataviz – Tableau e Looker",
+          "criterios": "Demonstrar conhecimento em: Tableau Desktop: dimensions vs measures, calculated fields, LOD expressions, dashboards interativos; Looker: LookML, explores",
+          "conteudos": "Tableau Desktop: dimensions vs measures, calculated fields, LOD expressions, dashboards interativos; Looker: LookML, explores",
+          "cursos": "Tableau eLearning (oficial)\nCoursera – Data Visualization with Tableau",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Storytelling com dados + SQL básico | Carga horária estimada: 35h"
         }
       ]
     },
     {
       "categoria": "Processos",
-      "trilha": "Gestão de Processos",
-      "competencia": "Mapear e melhorar processos de negócio",
-      "descricaoCompetencia": "Representar processos, identificar problemas e propor melhorias mensuráveis.",
+      "trilha": "Automatização de Processos",
+      "competencia": "Automatização de Processos (RPA e Process Mining)",
+      "descricaoCompetencia": "Automação robótica de processos (RPA) e descoberta/análise de processos via Process Mining.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
-          "nivel": "Fundamentos",
-          "ordem": 1,
-          "descricao": "Identificar elementos de um processo.",
-          "criterios": "Reconhece entradas, atividades, saídas, papéis e clientes.",
-          "conteudos": "SIPOC\nFluxograma\nPapéis e responsabilidades",
-          "cursos": "",
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Introdução a RPA",
+          "criterios": "Demonstrar conhecimento em: Conceitos de automação robótica, diferença RPA vs integração, casos de uso em BI",
+          "conteudos": "Conceitos de automação robótica, diferença RPA vs integração, casos de uso em BI",
+          "cursos": "Automation Anywhere University",
           "certificacoes": "",
           "livros": "",
-          "links": "",
-          "observacoes": ""
+          "links": "Plataforma: UiPath Academy (gratuito)",
+          "observacoes": "Pré-requisito: SOPs | Carga horária estimada: 20h"
         },
         {
-          "nivel": "Básico",
-          "ordem": 2,
-          "descricao": "Mapear processos de ponta a ponta.",
-          "criterios": "Produz mapa atual e identifica desperdícios e gargalos.",
-          "conteudos": "BPMN\nAS IS e TO BE\nAnálise de gargalos",
-          "cursos": "",
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Process Mining",
+          "criterios": "Demonstrar conhecimento em: Descoberta de processos a partir de logs, conformidade, análise de desvios, ferramentas Celonis / UiPath Process Mining",
+          "conteudos": "Descoberta de processos a partir de logs, conformidade, análise de desvios, ferramentas Celonis / UiPath Process Mining",
+          "cursos": "Coursera – Process Mining (TU/e)",
           "certificacoes": "",
           "livros": "",
-          "links": "",
-          "observacoes": ""
+          "links": "Ferramenta: Celonis Academy",
+          "observacoes": "Pré-requisito: Mapeamento As-Is + SQL básico | Carga horária estimada: 30h"
         }
       ]
     },
     {
-      "categoria": "Liderança e Organização",
-      "trilha": "Liderança de Times",
-      "competencia": "Conduzir alinhamentos e priorização do time",
-      "descricaoCompetencia": "Organizar prioridades, comunicar decisões e acompanhar compromissos de forma clara.",
+      "categoria": "Processos",
+      "trilha": "Fundamentos de BPM",
+      "competencia": "Introdução a Processos (BPM)",
+      "descricaoCompetencia": "Conceitos fundamentais de processo, ciclo de vida e visão sistêmica de negócio.",
       "ordemCompetencia": 1,
       "ativo": true,
       "niveis": [
         {
-          "nivel": "Fundamentos",
+          "nivel": "Básico",
           "ordem": 1,
-          "descricao": "Estruturar acordos e prioridades simples.",
-          "criterios": "Define responsáveis, prazos e próximos passos em reuniões.",
-          "conteudos": "Priorização\nRACI\nRegistro de decisões",
+          "descricao": "Introdução a BPM e ciclo de vida de processos",
+          "criterios": "Demonstrar conhecimento em: Conceito de processo, tipos (operacional, gerencial, suporte), ciclo PDCA, visão sistêmica",
+          "conteudos": "Conceito de processo, tipos (operacional, gerencial, suporte), ciclo PDCA, visão sistêmica",
+          "cursos": "FGV Online – Gestão por Processos",
+          "certificacoes": "",
+          "livros": "Gestão de Processos – ABPMP CBOK",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Fundamentos de BPM",
+      "competencia": "Notação BPMN 2.0",
+      "descricaoCompetencia": "Modelagem de processos usando a notação BPMN 2.0 (eventos, atividades, gateways, pools e lanes).",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Notação BPMN 2.0",
+          "criterios": "Demonstrar conhecimento em: Elementos básicos: eventos, atividades, gateways, pools, lanes, fluxos de sequência e mensagem",
+          "conteudos": "Elementos básicos: eventos, atividades, gateways, pools, lanes, fluxos de sequência e mensagem",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "BPMN Method and Style – Bruce Silver",
+          "links": "Ferramenta: Bizagi Modeler (gratuito)",
+          "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Gestão Estratégica de Processos",
+      "competencia": "Gestão Estratégica de Processos",
+      "descricaoCompetencia": "Alinhamento estratégico da gestão por processos, arquitetura de processos e cadeia de valor.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Gestão por processos e estrutura organizacional",
+          "criterios": "Demonstrar conhecimento em: Diferença entre gestão funcional e por processos, escritório de processos (BPMO), KPIs de processo",
+          "conteudos": "Diferença entre gestão funcional e por processos, escritório de processos (BPMO), KPIs de processo",
+          "cursos": "FGV – BPM Avançado",
+          "certificacoes": "",
+          "livros": "Gestão de Processos Orientada a Resultados – Baldam",
+          "links": "",
+          "observacoes": "Pré-requisito: ABPMP CBOK | Carga horária estimada: 25h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Arquitetura de processos e cadeia de valor",
+          "criterios": "Demonstrar conhecimento em: Hierarquia de processos, cadeia de valor de Porter, alinhamento estratégico, EPC (Enterprise Process Chain)",
+          "conteudos": "Hierarquia de processos, cadeia de valor de Porter, alinhamento estratégico, EPC (Enterprise Process Chain)",
+          "cursos": "Gartner BPM",
+          "certificacoes": "",
+          "livros": "Enterprise Architecture as Strategy – Ross et al.",
+          "links": "",
+          "observacoes": "Pré-requisito: Gestão por processos | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Governança de Processos",
+      "competencia": "Governança e Maturidade de Processos (BPMO/CMMI)",
+      "descricaoCompetencia": "Estruturação do escritório de processos (BPMO) e evolução da maturidade organizacional em BPM.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Escritório de Processos (BPMO)",
+          "criterios": "Demonstrar conhecimento em: Papel e estrutura do BPMO, funções de governança, portfólio de processos, modelo operacional do escritório",
+          "conteudos": "Papel e estrutura do BPMO, funções de governança, portfólio de processos, modelo operacional do escritório",
+          "cursos": "ABPMP Brasil – BPM Avançado",
+          "certificacoes": "",
+          "livros": "BPM CBOK v4.0 – cap. Organização BPM",
+          "links": "",
+          "observacoes": "Pré-requisito: ABPMP CBOK | Carga horária estimada: 25h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Maturidade organizacional (CMMI / OMG BPMM)",
+          "criterios": "Demonstrar conhecimento em: Níveis de maturidade CMMI-DEV e OMG BPMM, avaliação SCAMPI, roadmap de evolução, benchmarking",
+          "conteudos": "Níveis de maturidade CMMI-DEV e OMG BPMM, avaliação SCAMPI, roadmap de evolução, benchmarking",
+          "cursos": "ISACA – CMMI Associate",
+          "certificacoes": "",
+          "livros": "CMMI for Development v2.0 – SEI",
+          "links": "",
+          "observacoes": "Pré-requisito: Escritório de Processos | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Governança de Processos",
+      "competencia": "Auditoria e Conformidade de Processos",
+      "descricaoCompetencia": "Auditoria interna, conformidade regulatória e controles internos aplicados a processos.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Auditoria e conformidade de processos",
+          "criterios": "Demonstrar conhecimento em: Auditoria interna de processos, conformidade regulatória, controles internos (COSO), evidências de execução",
+          "conteudos": "Auditoria interna de processos, conformidade regulatória, controles internos (COSO), evidências de execução",
+          "cursos": "Udemy – Auditoria de Processos e Controles Internos",
+          "certificacoes": "",
+          "livros": "Internal Auditing – Sawyer",
+          "links": "",
+          "observacoes": "Pré-requisito: SOPs + RACI | Carga horária estimada: 25h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Governança de Processos",
+      "competencia": "LGPD Aplicada a Processos",
+      "descricaoCompetencia": "Adequação de processos e SOPs à Lei Geral de Proteção de Dados (LGPD).",
+      "ordemCompetencia": 3,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "LGPD aplicada a processos e SOPs",
+          "criterios": "Demonstrar conhecimento em: Mapeamento de dados pessoais em fluxos de processo, adequação de SOPs à LGPD, RIPD (Relatório de Impacto)",
+          "conteudos": "Mapeamento de dados pessoais em fluxos de processo, adequação de SOPs à LGPD, RIPD (Relatório de Impacto)",
+          "cursos": "FGV – LGPD para Gestores",
+          "certificacoes": "",
+          "livros": "LGPD Comentada – Cots & Oliveira",
+          "links": "",
+          "observacoes": "Pré-requisito: SOPs + Mapeamento As-Is | Carga horária estimada: 15h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Governança e Documentação",
+      "competencia": "SOPs e Manuais de Processo",
+      "descricaoCompetencia": "Elaboração de procedimentos operacionais padrão (SOPs) e manuais de processo.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "SOPs e manuais de processo",
+          "criterios": "Demonstrar conhecimento em: Estrutura de procedimento operacional padrão, padronização, versionamento de documentos",
+          "conteudos": "Estrutura de procedimento operacional padrão, padronização, versionamento de documentos",
           "cursos": "",
           "certificacoes": "",
           "livros": "",
+          "links": "Template: ISO 9001 SOP\nFerramenta: Confluence, Notion",
+          "observacoes": "Pré-requisito: BPMN 2.0 | Carga horária estimada: 10h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Governança e Documentação",
+      "competencia": "Matriz RACI e Gestão de Responsabilidades",
+      "descricaoCompetencia": "Definição de papéis e responsabilidades em processos e projetos usando a matriz RACI.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Matriz RACI e gestão de responsabilidades",
+          "criterios": "Demonstrar conhecimento em: Definição de papéis (Responsible, Accountable, Consulted, Informed), aplicação em projetos e processos",
+          "conteudos": "Definição de papéis (Responsible, Accountable, Consulted, Informed), aplicação em projetos e processos",
+          "cursos": "Alura – Gestão de Processos",
+          "certificacoes": "",
+          "livros": "PMBOK Guide",
           "links": "",
-          "observacoes": ""
+          "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 10h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Governança e Documentação",
+      "competencia": "Frameworks ABPMP e Maturidade BPM",
+      "descricaoCompetencia": "Modelos de referência (ABPMP CBOK) e avaliação de maturidade em gestão de processos.",
+      "ordemCompetencia": 3,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Frameworks ABPMP e maturidade BPM",
+          "criterios": "Demonstrar conhecimento em: ABPMP BPM CBOK, modelos de maturidade (CMMI, OMG BPMM), avaliação e evolução de capacidades",
+          "conteudos": "ABPMP BPM CBOK, modelos de maturidade (CMMI, OMG BPMM), avaliação e evolução de capacidades",
+          "cursos": "",
+          "certificacoes": "ABPMP Brasil – Certificação CBPP",
+          "livros": "BPM CBOK v4.0 – ABPMP",
+          "links": "",
+          "observacoes": "Pré-requisito: Mapeamento To-Be | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Mapeamento de Processos",
+      "competencia": "Mapeamento de Processos",
+      "descricaoCompetencia": "Levantamento e documentação de processos, do estado atual (As-Is) ao redesenho futuro (To-Be).",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Mapeamento As-Is",
+          "criterios": "Demonstrar conhecimento em: Técnicas de levantamento (entrevistas, observação, shadowing), documentação do estado atual",
+          "conteudos": "Técnicas de levantamento (entrevistas, observação, shadowing), documentação do estado atual",
+          "cursos": "Udemy – Mapeamento de Processos com BPMN",
+          "certificacoes": "",
+          "livros": "",
+          "links": "Ferramenta: Lucidchart",
+          "observacoes": "Pré-requisito: BPMN 2.0 | Carga horária estimada: 15h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Mapeamento To-Be e análise de gaps",
+          "criterios": "Demonstrar conhecimento em: Redesenho de processos, identificação de oportunidades, análise de valor agregado",
+          "conteudos": "Redesenho de processos, identificação de oportunidades, análise de valor agregado",
+          "cursos": "Coursera – BPM",
+          "certificacoes": "",
+          "livros": "Business Process Management – Dumas et al.",
+          "links": "",
+          "observacoes": "Pré-requisito: Mapeamento As-Is | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Melhoria Contínua",
+      "competencia": "Melhoria Contínua (Lean e Six Sigma)",
+      "descricaoCompetencia": "Metodologias de melhoria contínua e redução de desperdícios, do Lean Thinking ao Six Sigma Black Belt.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Lean Thinking e eliminação de desperdícios",
+          "criterios": "Demonstrar conhecimento em: 8 desperdícios (TIMWOODS), fluxo de valor, just-in-time, kaizen, 5S",
+          "conteudos": "8 desperdícios (TIMWOODS), fluxo de valor, just-in-time, kaizen, 5S",
+          "cursos": "LinkedIn Learning – Lean Fundamentals",
+          "certificacoes": "",
+          "livros": "A Mentalidade Enxuta – Womack & Jones",
+          "links": "",
+          "observacoes": "Pré-requisito: Introdução a BPM | Carga horária estimada: 20h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Six Sigma – Yellow/Green Belt",
+          "criterios": "Demonstrar conhecimento em: DMAIC, ferramentas estatísticas básicas (histograma, diagrama de causa e efeito, pareto)",
+          "conteudos": "DMAIC, ferramentas estatísticas básicas (histograma, diagrama de causa e efeito, pareto)",
+          "cursos": "Coursera – Six Sigma Yellow Belt (USG)",
+          "certificacoes": "",
+          "livros": "Six Sigma for Dummies",
+          "links": "",
+          "observacoes": "Pré-requisito: Lean Thinking | Carga horária estimada: 40h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Six Sigma – Black Belt",
+          "criterios": "Demonstrar conhecimento em: DOE, análise de regressão, controle estatístico de processo (CEP), DFSS",
+          "conteudos": "DOE, análise de regressão, controle estatístico de processo (CEP), DFSS",
+          "cursos": "",
+          "certificacoes": "ASQ Certified Black Belt Prep",
+          "livros": "The Six Sigma Handbook – Pyzdek",
+          "links": "",
+          "observacoes": "Pré-requisito: Green Belt | Carga horária estimada: 80h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Cloud Computing",
+      "competencia": "Cloud Computing",
+      "descricaoCompetencia": "Fundamentos, serviços de dados e arquitetura de soluções em nuvem (Azure/AWS/GCP).",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Fundamentos de Cloud (Azure/AWS/GCP)",
+          "criterios": "Demonstrar conhecimento em: Modelos de serviço, regiões e zonas, armazenamento, IAM, custo e billing",
+          "conteudos": "Modelos de serviço, regiões e zonas, armazenamento, IAM, custo e billing",
+          "cursos": "Microsoft Learn – Azure Fundamentals (AZ-900)\nAWS Cloud Practitioner Essentials",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 20h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Serviços de dados em Cloud",
+          "criterios": "Demonstrar conhecimento em: Data Lake, Data Warehouse gerenciado (Synapse, Redshift, BigQuery), Blob Storage, pipelines cloud-native",
+          "conteudos": "Data Lake, Data Warehouse gerenciado (Synapse, Redshift, BigQuery), Blob Storage, pipelines cloud-native",
+          "cursos": "Microsoft Learn – DP-900\nCoursera – Google Cloud Data Engineering",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Fundamentos de Cloud | Carga horária estimada: 30h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Arquitetura de soluções em Cloud",
+          "criterios": "Demonstrar conhecimento em: Well-Architected Framework, FinOps, alta disponibilidade, disaster recovery, arquitetura Lakehouse",
+          "conteudos": "Well-Architected Framework, FinOps, alta disponibilidade, disaster recovery, arquitetura Lakehouse",
+          "cursos": "AZ-305 / AWS Solutions Architect Professional",
+          "certificacoes": "",
+          "livros": "Cloud Architecture Patterns – Wilder",
+          "links": "",
+          "observacoes": "Pré-requisito: Serviços de dados em Cloud | Carga horária estimada: 50h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "ERP e Aplicações Corporativas",
+      "competencia": "ERP e Aplicações Corporativas",
+      "descricaoCompetencia": "Fundamentos e administração de sistemas ERP e suas aplicações corporativas.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Fundamentos de ERP",
+          "criterios": "Demonstrar conhecimento em: Módulos (FI, MM, SD, HR), integração entre módulos, master data, transações e relatórios",
+          "conteudos": "Módulos (FI, MM, SD, HR), integração entre módulos, master data, transações e relatórios",
+          "cursos": "SAP Learning Hub – SAP S/4HANA Essentials (gratuito)\nUdemy – SAP para Iniciantes",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Arquitetura de sistemas | Carga horária estimada: 25h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Administração e configuração de ERP",
+          "criterios": "Demonstrar conhecimento em: Customizing, papéis e autorizações, tabelas de configuração, extração de dados para BI",
+          "conteudos": "Customizing, papéis e autorizações, tabelas de configuração, extração de dados para BI",
+          "cursos": "SAP Education – SAP S/4HANA (pago)",
+          "certificacoes": "",
+          "livros": "SAP ERP Financials – Narayanan Veeriah",
+          "links": "",
+          "observacoes": "Pré-requisito: Fundamentos de ERP | Carga horária estimada: 40h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Fundamentos de TI",
+      "competencia": "Arquitetura de Sistemas",
+      "descricaoCompetencia": "Conceitos de arquitetura de sistemas, modelo cliente-servidor, APIs e bancos de dados.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Conceitos de arquitetura de sistemas",
+          "criterios": "Demonstrar conhecimento em: Cliente-servidor, APIs REST, microsserviços, monolito, SaaS/PaaS/IaaS, bancos de dados relacionais vs NoSQL",
+          "conteudos": "Cliente-servidor, APIs REST, microsserviços, monolito, SaaS/PaaS/IaaS, bancos de dados relacionais vs NoSQL",
+          "cursos": "Coursera – IBM IT Fundamentals",
+          "certificacoes": "",
+          "livros": "Fundamentos de Sistemas de Informação – O'Brien",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Fundamentos de TI",
+      "competencia": "Redes e Segurança Básica",
+      "descricaoCompetencia": "Fundamentos de redes, protocolos e segurança básica da informação.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Redes e segurança básica",
+          "criterios": "Demonstrar conhecimento em: TCP/IP, HTTP/HTTPS, firewall, VPN, autenticação, conceitos de criptografia",
+          "conteudos": "TCP/IP, HTTP/HTTPS, firewall, VPN, autenticação, conceitos de criptografia",
+          "cursos": "Cisco Networking Academy – IT Essentials\nAlura – Redes para Devs",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Arquitetura de sistemas | Carga horária estimada: 15h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Gestão de Projetos",
+      "competencia": "Fundamentos de Gerenciamento de Projetos (PMBok)",
+      "descricaoCompetencia": "Fundamentos de gerenciamento de projetos segundo o guia PMBOK.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Fundamentos de gerenciamento de projetos (PMBok)",
+          "criterios": "Demonstrar conhecimento em: Grupos de processos, áreas de conhecimento, termo de abertura, EAP, cronograma, risco",
+          "conteudos": "Grupos de processos, áreas de conhecimento, termo de abertura, EAP, cronograma, risco",
+          "cursos": "Coursera – Google Project Management",
+          "certificacoes": "",
+          "livros": "PMBOK Guide 7ª ed. – PMI",
+          "links": "",
+          "observacoes": "Pré-requisito: — | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Gestão de Projetos",
+      "competencia": "Métodos Ágeis – Scrum e Kanban",
+      "descricaoCompetencia": "Práticas ágeis de gestão de projetos com Scrum e Kanban.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Métodos Ágeis – Scrum e Kanban",
+          "criterios": "Demonstrar conhecimento em: Sprints, cerimônias, product backlog, papéis (PO, SM, Dev Team), quadro Kanban, WIP limits",
+          "conteudos": "Sprints, cerimônias, product backlog, papéis (PO, SM, Dev Team), quadro Kanban, WIP limits",
+          "cursos": "Alura – Scrum e Agile",
+          "certificacoes": "",
+          "livros": "Scrum Guide (gratuito)",
+          "links": "",
+          "observacoes": "Pré-requisito: Fundamentos de projetos | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Gestão de Projetos",
+      "competencia": "Gestão de Projetos de Dados e BI",
+      "descricaoCompetencia": "Gestão de projetos analíticos e de BI com adaptação de práticas ágeis.",
+      "ordemCompetencia": 3,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Gestão de projetos de dados e BI",
+          "criterios": "Demonstrar conhecimento em: Adaptação de Scrum para projetos analíticos, critérios de aceitação de dashboards, gestão de stakeholders em BI",
+          "conteudos": "Adaptação de Scrum para projetos analíticos, critérios de aceitação de dashboards, gestão de stakeholders em BI",
+          "cursos": "Udemy – Gestão de Projetos de BI",
+          "certificacoes": "",
+          "livros": "Data-Driven – DJ Patil",
+          "links": "",
+          "observacoes": "Pré-requisito: Scrum + Fundamentos de BI | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "ITIL e Governança de TI",
+      "competencia": "ITIL e Governança de TI (COBIT)",
+      "descricaoCompetencia": "Gestão de serviços de TI (ITIL 4) e governança de TI (COBIT).",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "ITIL 4 – Fundamentos",
+          "criterios": "Demonstrar conhecimento em: Conceito de serviço, práticas ITIL (incident, change, problem management), cadeia de valor de serviço",
+          "conteudos": "Conceito de serviço, práticas ITIL (incident, change, problem management), cadeia de valor de serviço",
+          "cursos": "Udemy – ITIL 4 Foundation Prep",
+          "certificacoes": "",
+          "livros": "ITIL 4 Foundation – Axelos",
+          "links": "",
+          "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 25h"
+        },
+        {
+          "nivel": "Especialista",
+          "ordem": 3,
+          "descricao": "Governança de TI e COBIT",
+          "criterios": "Demonstrar conhecimento em: Framework COBIT 2019, alinhamento TI-negócio, métricas de governança, auditoria de TI",
+          "conteudos": "Framework COBIT 2019, alinhamento TI-negócio, métricas de governança, auditoria de TI",
+          "cursos": "ISACA – COBIT Foundation",
+          "certificacoes": "",
+          "livros": "COBIT 2019 – ISACA",
+          "links": "",
+          "observacoes": "Pré-requisito: ITIL 4 | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Integrações e APIs",
+      "competencia": "Integrações e APIs",
+      "descricaoCompetencia": "Consumo e integração de sistemas via APIs REST e ferramentas de integração/ETL.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Consumo de APIs REST",
+          "criterios": "Demonstrar conhecimento em: Método HTTP, JSON, autenticação OAuth2/API Key, ferramentas Postman e Insomnia",
+          "conteudos": "Método HTTP, JSON, autenticação OAuth2/API Key, ferramentas Postman e Insomnia",
+          "cursos": "Alura – APIs com Postman",
+          "certificacoes": "",
+          "livros": "",
+          "links": "Documentação: Swagger/OpenAPI",
+          "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 15h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Integração de sistemas e ETL conceitual",
+          "criterios": "Demonstrar conhecimento em: Padrões de integração (EAI, ESB, iPaaS), ferramentas de integração (MuleSoft, Azure Integration), visão de ETL",
+          "conteudos": "Padrões de integração (EAI, ESB, iPaaS), ferramentas de integração (MuleSoft, Azure Integration), visão de ETL",
+          "cursos": "MuleSoft Training (gratuito)",
+          "certificacoes": "",
+          "livros": "Enterprise Integration Patterns – Hohpe",
+          "links": "",
+          "observacoes": "Pré-requisito: APIs REST | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Segurança de Sistemas",
+      "competencia": "Segurança da Informação e Arquitetura Segura",
+      "descricaoCompetencia": "Fundamentos de segurança da informação e arquitetura de controle de acesso (IAM, Zero Trust).",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Básico",
+          "ordem": 1,
+          "descricao": "Segurança da informação – fundamentos",
+          "criterios": "Demonstrar conhecimento em: Tríade CIA (Confidencialidade, Integridade, Disponibilidade), ameaças comuns, controles preventivos e detectivos",
+          "conteudos": "Tríade CIA (Confidencialidade, Integridade, Disponibilidade), ameaças comuns, controles preventivos e detectivos",
+          "cursos": "Coursera – IBM Cybersecurity Fundamentals\nAlura – Segurança da Informação",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": "Pré-requisito: Fundamentos de TI | Carga horária estimada: 15h"
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Arquitetura segura e controle de acesso",
+          "criterios": "Demonstrar conhecimento em: IAM, RBAC, zero trust, princípio do menor privilégio, segmentação de rede, autenticação multifator (MFA)",
+          "conteudos": "IAM, RBAC, zero trust, princípio do menor privilégio, segmentação de rede, autenticação multifator (MFA)",
+          "cursos": "Microsoft Learn – SC-900",
+          "certificacoes": "",
+          "livros": "Zero Trust Networks – Gilman",
+          "links": "",
+          "observacoes": "Pré-requisito: Segurança fundamentos | Carga horária estimada: 20h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Segurança de Sistemas",
+      "competencia": "ISO 27001 – Gestão de Segurança da Informação",
+      "descricaoCompetencia": "Implementação e gestão de sistemas de segurança da informação segundo a norma ISO 27001.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "ISO 27001 – Gestão de Segurança da Informação",
+          "criterios": "Demonstrar conhecimento em: Estrutura da norma, controles Anexo A, SGSI (Sistema de Gestão de Segurança da Informação), ciclo PDCA, análise de riscos",
+          "conteudos": "Estrutura da norma, controles Anexo A, SGSI (Sistema de Gestão de Segurança da Informação), ciclo PDCA, análise de riscos",
+          "cursos": "Udemy – ISO 27001 Lead Implementer",
+          "certificacoes": "",
+          "livros": "ISO 27001 Implementation Guide – IT Governance",
+          "links": "",
+          "observacoes": "Pré-requisito: Arquitetura segura | Carga horária estimada: 30h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Segurança de Sistemas",
+      "competencia": "LGPD Aplicada a Sistemas",
+      "descricaoCompetencia": "Adequação de sistemas e arquitetura de TI à LGPD.",
+      "ordemCompetencia": 3,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "LGPD aplicada a sistemas e arquitetura",
+          "criterios": "Demonstrar conhecimento em: Bases legais, controle de acesso a dados pessoais, logs de auditoria, privacidade by design, papel do DPO em TI",
+          "conteudos": "Bases legais, controle de acesso a dados pessoais, logs de auditoria, privacidade by design, papel do DPO em TI",
+          "cursos": "FGV Online – LGPD para TI",
+          "certificacoes": "",
+          "livros": "LGPD Comentada – Cots & Oliveira",
+          "links": "",
+          "observacoes": "Pré-requisito: ISO 27001 + Arquitetura segura | Carga horária estimada: 15h"
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Segurança de Sistemas",
+      "competencia": "Row-Level Security e Mascaramento de Dados",
+      "descricaoCompetencia": "Controle de acesso a dados em nível de linha (RLS) e mascaramento/anonimização de dados.",
+      "ordemCompetencia": 4,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Intermediário",
+          "ordem": 2,
+          "descricao": "Row-Level Security e mascaramento de dados",
+          "criterios": "Demonstrar conhecimento em: RLS em Power BI e bancos de dados, mascaramento dinâmico (SQL Server, Synapse), anonimização em pipelines",
+          "conteudos": "RLS em Power BI e bancos de dados, mascaramento dinâmico (SQL Server, Synapse), anonimização em pipelines",
+          "cursos": "Alura – Segurança em Power BI",
+          "certificacoes": "",
+          "livros": "",
+          "links": "Docs: Microsoft – Row-Level Security",
+          "observacoes": "Pré-requisito: LGPD sistemas + Power BI intermediário | Carga horária estimada: 15h"
         }
       ]
     }
