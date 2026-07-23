@@ -1,0 +1,266 @@
+{
+  "version": "1.0.0",
+  "categorias": [
+    {
+      "nome": "Processos",
+      "descricao": "Gestão, desenho, melhoria e governança de processos.",
+      "ordem": 1,
+      "ativo": true
+    },
+    {
+      "nome": "Sistemas",
+      "descricao": "Aplicações, arquitetura, integrações e operação tecnológica.",
+      "ordem": 2,
+      "ativo": true
+    },
+    {
+      "nome": "Dados",
+      "descricao": "Análise, engenharia, visualização e ciência de dados.",
+      "ordem": 3,
+      "ativo": true
+    },
+    {
+      "nome": "Cyber Segurança",
+      "descricao": "Proteção de ativos, riscos e operações de segurança.",
+      "ordem": 4,
+      "ativo": true
+    },
+    {
+      "nome": "Liderança e Organização",
+      "descricao": "Gestão, comunicação, estratégia e desenvolvimento profissional.",
+      "ordem": 5,
+      "ativo": true
+    }
+  ],
+  "trilhas": [
+    {
+      "categoria": "Dados",
+      "nome": "Business Intelligence",
+      "descricao": "Transformar dados em análises e decisões.",
+      "ordem": 1,
+      "ativo": true
+    },
+    {
+      "categoria": "Dados",
+      "nome": "Ciência de Dados",
+      "descricao": "Desenvolver análises estatísticas e modelos preditivos.",
+      "ordem": 2,
+      "ativo": true
+    },
+    {
+      "categoria": "Sistemas",
+      "nome": "Arquitetura e Integrações",
+      "descricao": "Compreender sistemas, APIs e integrações.",
+      "ordem": 1,
+      "ativo": true
+    },
+    {
+      "categoria": "Processos",
+      "nome": "Gestão de Processos",
+      "descricao": "Mapear, melhorar e governar processos.",
+      "ordem": 1,
+      "ativo": true
+    },
+    {
+      "categoria": "Liderança e Organização",
+      "nome": "Liderança de Times",
+      "descricao": "Desenvolver capacidade de liderança e organização.",
+      "ordem": 1,
+      "ativo": true
+    }
+  ],
+  "catalogo": [
+    {
+      "categoria": "Dados",
+      "trilha": "Business Intelligence",
+      "competencia": "Analisar dados com SQL",
+      "descricaoCompetencia": "Consultar, combinar e transformar dados relacionais para responder perguntas de negócio.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Fundamentos",
+          "ordem": 1,
+          "descricao": "Compreender bancos relacionais e consultas básicas.",
+          "criterios": "Entende tabelas, colunas, chaves e executa consultas SELECT simples.",
+          "conteudos": "Bancos relacionais\nSELECT e FROM\nWHERE e ORDER BY",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "Documentação oficial do PostgreSQL",
+          "links": "https://www.postgresql.org/docs/",
+          "observacoes": ""
+        },
+        {
+          "nivel": "Básico",
+          "ordem": 2,
+          "descricao": "Construir consultas com agregações e relacionamentos.",
+          "criterios": "Utiliza JOIN, GROUP BY e funções de agregação.",
+          "conteudos": "JOINs\nGROUP BY\nFunções de agregação",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        },
+        {
+          "nivel": "Intermediário",
+          "ordem": 3,
+          "descricao": "Criar consultas analíticas reutilizáveis.",
+          "criterios": "Utiliza CTEs, subconsultas e funções de janela.",
+          "conteudos": "CTEs\nSubconsultas\nWindow functions",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Business Intelligence",
+      "competencia": "Desenvolver modelos e dashboards com Power BI",
+      "descricaoCompetencia": "Construir modelos semânticos, indicadores e visualizações para apoiar decisões.",
+      "ordemCompetencia": 2,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Fundamentos",
+          "ordem": 1,
+          "descricao": "Conhecer o fluxo básico do Power BI.",
+          "criterios": "Importa dados, cria visuais e publica um relatório simples.",
+          "conteudos": "Power Query\nModelo de dados\nVisuais básicos",
+          "cursos": "Microsoft Learn — Power BI",
+          "certificacoes": "",
+          "livros": "",
+          "links": "https://learn.microsoft.com/power-bi/",
+          "observacoes": ""
+        },
+        {
+          "nivel": "Básico",
+          "ordem": 2,
+          "descricao": "Criar modelos e medidas básicas.",
+          "criterios": "Organiza relacionamentos e escreve medidas DAX básicas.",
+          "conteudos": "Relacionamentos\nModelo estrela\nDAX básico",
+          "cursos": "",
+          "certificacoes": "Microsoft Power BI Data Analyst",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        }
+      ]
+    },
+    {
+      "categoria": "Dados",
+      "trilha": "Ciência de Dados",
+      "competencia": "Aplicar estatística em análises de dados",
+      "descricaoCompetencia": "Selecionar e aplicar técnicas estatísticas para interpretar dados e sustentar conclusões.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Fundamentos",
+          "ordem": 1,
+          "descricao": "Compreender medidas e distribuições básicas.",
+          "criterios": "Interpreta média, mediana, dispersão e distribuições.",
+          "conteudos": "Estatística descritiva\nVariabilidade\nDistribuições",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "Practical Statistics for Data Scientists",
+          "links": "",
+          "observacoes": ""
+        },
+        {
+          "nivel": "Básico",
+          "ordem": 2,
+          "descricao": "Realizar inferências e testes básicos.",
+          "criterios": "Formula hipóteses e interpreta intervalos e testes.",
+          "conteudos": "Amostragem\nIntervalo de confiança\nTeste de hipótese",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        }
+      ]
+    },
+    {
+      "categoria": "Sistemas",
+      "trilha": "Arquitetura e Integrações",
+      "competencia": "Projetar integrações por APIs",
+      "descricaoCompetencia": "Definir e documentar integrações seguras e sustentáveis entre sistemas.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Fundamentos",
+          "ordem": 1,
+          "descricao": "Compreender conceitos de integração e APIs.",
+          "criterios": "Diferencia API, webhook, arquivo e integração direta.",
+          "conteudos": "HTTP\nREST\nJSON\nAutenticação",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        }
+      ]
+    },
+    {
+      "categoria": "Processos",
+      "trilha": "Gestão de Processos",
+      "competencia": "Mapear e melhorar processos de negócio",
+      "descricaoCompetencia": "Representar processos, identificar problemas e propor melhorias mensuráveis.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Fundamentos",
+          "ordem": 1,
+          "descricao": "Identificar elementos de um processo.",
+          "criterios": "Reconhece entradas, atividades, saídas, papéis e clientes.",
+          "conteudos": "SIPOC\nFluxograma\nPapéis e responsabilidades",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        },
+        {
+          "nivel": "Básico",
+          "ordem": 2,
+          "descricao": "Mapear processos de ponta a ponta.",
+          "criterios": "Produz mapa atual e identifica desperdícios e gargalos.",
+          "conteudos": "BPMN\nAS IS e TO BE\nAnálise de gargalos",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        }
+      ]
+    },
+    {
+      "categoria": "Liderança e Organização",
+      "trilha": "Liderança de Times",
+      "competencia": "Conduzir alinhamentos e priorização do time",
+      "descricaoCompetencia": "Organizar prioridades, comunicar decisões e acompanhar compromissos de forma clara.",
+      "ordemCompetencia": 1,
+      "ativo": true,
+      "niveis": [
+        {
+          "nivel": "Fundamentos",
+          "ordem": 1,
+          "descricao": "Estruturar acordos e prioridades simples.",
+          "criterios": "Define responsáveis, prazos e próximos passos em reuniões.",
+          "conteudos": "Priorização\nRACI\nRegistro de decisões",
+          "cursos": "",
+          "certificacoes": "",
+          "livros": "",
+          "links": "",
+          "observacoes": ""
+        }
+      ]
+    }
+  ]
+}

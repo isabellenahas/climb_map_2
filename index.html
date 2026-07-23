@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Climb Map — mapa de competências, trilhas e planejamento profissional.">
+  <title>Climb Map</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <div id="onboarding" class="onboarding hidden">
+    <form id="onboarding-form" class="onboarding-card">
+      <span class="brand-symbol">CM</span>
+      <p class="eyebrow">CLIMB MAP</p>
+      <h1>Seu mapa de crescimento profissional</h1>
+      <p class="muted">Crie seu perfil local. Seus dados pessoais permanecem somente neste navegador.</p>
+      <label>
+        Como você quer ser chamada?
+        <input id="profile-name" required maxlength="60" placeholder="Ex.: Isabelle">
+      </label>
+      <button class="button primary" type="submit">Começar</button>
+    </form>
+  </div>
+
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-symbol">CM</span>
+        <div><strong>Climb Map</strong><small>Mapa de carreira</small></div>
+      </div>
+
+      <nav id="navigation">
+        <button class="nav-item active" data-route="mapa"><span>◫</span> Meu Mapa</button>
+        <button class="nav-item" data-route="catalogo"><span>⌕</span> Catálogo</button>
+        <button class="nav-item" data-route="planejamento"><span>▦</span> Planejamento</button>
+        <button class="nav-item" data-route="trilhas"><span>↗</span> Trilhas</button>
+        <button class="nav-item" data-route="evolucao"><span>⌁</span> Evolução</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="open-settings" class="profile-button">
+          <span class="avatar" id="avatar">I</span>
+          <span><strong id="sidebar-name">Perfil</strong><small>Dados locais</small></span>
+        </button>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">CLIMB MAP</p>
+          <h1 id="page-title">Meu Mapa</h1>
+        </div>
+        <div class="topbar-actions">
+          <button id="import-button" class="button secondary">Importar Excel</button>
+          <button id="theme-button" class="icon-button" title="Alternar tema">◐</button>
+        </div>
+      </header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+
+  <input id="excel-input" type="file" accept=".xlsx,.xls" hidden>
+
+  <dialog id="item-dialog">
+    <form id="item-form" method="dialog">
+      <div class="dialog-header">
+        <div><p class="eyebrow">PLANEJAMENTO</p><h2 id="dialog-title">Novo card</h2></div>
+        <button type="button" class="icon-button close-dialog">×</button>
+      </div>
+      <input type="hidden" id="item-id">
+      <label>Tipo
+        <select id="item-type">
+          <option value="manual">Card manual</option>
+          <option value="nivel">Nível de competência</option>
+        </select>
+      </label>
+      <div id="competency-fields" class="hidden">
+        <label>Competência<select id="item-competency"></select></label>
+        <label>Nível<select id="item-level"></select></label>
+      </div>
+      <label>Título<input id="item-title" required maxlength="120"></label>
+      <div class="form-grid">
+        <label>Status
+          <select id="item-status">
+            <option value="standby">Stand by</option>
+            <option value="aberto">Em Aberto</option>
+            <option value="andamento">Em Andamento</option>
+            <option value="concluido">Concluído</option>
+            <option value="cancelado">Cancelado</option>
+          </select>
+        </label>
+        <label>Prioridade
+          <select id="item-priority">
+            <option value="baixa">Baixa</option>
+            <option value="media" selected>Média</option>
+            <option value="alta">Alta</option>
+          </select>
+        </label>
+      </div>
+      <div class="form-grid">
+        <label>Data de início<input id="item-start" type="date"></label>
+        <label>Prazo<input id="item-deadline" type="date"></label>
+      </div>
+      <label>Observações<textarea id="item-notes" rows="3"></textarea></label>
+      <div class="dialog-actions">
+        <button type="button" id="delete-item" class="button danger hidden">Excluir</button>
+        <span></span>
+        <button type="button" class="button secondary close-dialog">Cancelar</button>
+        <button type="submit" class="button primary">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="settings-dialog">
+    <form method="dialog">
+      <div class="dialog-header">
+        <div><p class="eyebrow">CONFIGURAÇÕES</p><h2>Dados do perfil</h2></div>
+        <button type="button" class="icon-button close-settings">×</button>
+      </div>
+      <label>Nome do perfil<input id="settings-name" maxlength="60"></label>
+      <div class="dialog-actions">
+        <button type="button" id="reset-data" class="button danger">Apagar meus dados</button>
+        <span></span>
+        <button type="button" id="export-backup" class="button secondary">Exportar backup</button>
+        <button type="submit" id="save-settings" class="button primary">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
