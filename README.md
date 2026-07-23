@@ -55,3 +55,12 @@ Os dados pessoais ficam no navegador. O catálogo oficial está publicado em `da
 - Cores leves por categoria no Catálogo.
 - Heatmap em matriz: competências nas linhas e níveis nas colunas.
 - Escala personalizada de cores.
+
+
+## Novidades da V4
+- Filtro exato por competência no Catálogo.
+- Navegação corrigida a partir de Meu Mapa, Heatmap e Evolução.
+- Visualização detalhada de competências dentro de Trilhas.
+- Configurações centralizam tema, importação, download e restauração.
+- Evolução por categoria e níveis concluídos.
+- Heatmap com níveis oficiais nas colunas e títulos/descrições dos níveis nas células.

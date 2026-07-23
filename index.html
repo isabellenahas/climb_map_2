@@ -49,9 +49,7 @@
       <header class="topbar">
         <div><p class="eyebrow">CLIMB MAP</p><h1 id="page-title">Meu Mapa</h1></div>
         <div class="topbar-actions">
-          <button id="import-button" class="button secondary">Importar Excel</button>
-          <button id="backup-button" class="icon-button" title="Backup e restauração">⚙</button>
-          <button id="theme-button" class="icon-button" title="Alternar tema">◐</button>
+          <button id="settings-button" class="icon-button" title="Configurações">⚙</button>
         </div>
       </header>
       <section id="content" class="content"></section>
@@ -149,28 +147,50 @@
   <dialog id="settings-dialog">
     <form method="dialog">
       <div class="dialog-header">
-        <div><p class="eyebrow">CONFIGURAÇÕES</p><h2>Dados do perfil</h2></div>
+        <div><p class="eyebrow">CONFIGURAÇÕES</p><h2>Perfil, aparência e dados</h2></div>
         <button type="button" class="icon-button close-settings">×</button>
       </div>
       <label>Nome do perfil<input id="settings-name" maxlength="60"></label>
+      <div class="settings-sections">
+        <section class="backup-option">
+          <h3>Aparência</h3>
+          <p class="muted">Alterne entre o tema claro e escuro.</p>
+          <button type="button" id="settings-theme" class="button secondary">Alternar tema</button>
+        </section>
+        <section class="backup-option">
+          <h3>Atualizar catálogo</h3>
+          <p class="muted">Importe uma nova versão do Excel oficial.</p>
+          <button type="button" id="settings-import-excel" class="button secondary">Importar Excel</button>
+        </section>
+        <section class="backup-option">
+          <h3>Download completo</h3>
+          <p class="muted">Baixe perfil, avaliações, planejamento, histórico, preferências e catálogo.</p>
+          <button type="button" id="download-full-backup" class="button primary">Baixar backup completo</button>
+        </section>
+        <section class="backup-option warning-box">
+          <h3>Upload total</h3>
+          <p class="muted">Substitui todos os dados atualmente ativos neste navegador.</p>
+          <input id="full-backup-input" type="file" accept=".json" hidden>
+          <button type="button" id="upload-full-backup" class="button secondary">Selecionar backup</button>
+        </section>
+      </div>
       <div class="dialog-actions">
         <button type="button" id="reset-data" class="button danger">Apagar meus dados</button>
-        <span></span>
-        <button type="button" id="export-backup" class="button secondary">Exportar backup</button>
-        <button type="submit" id="save-settings" class="button primary">Salvar</button>
+        <span></span><span></span>
+        <button type="submit" id="save-settings" class="button primary">Salvar perfil</button>
       </div>
     </form>
   </dialog>
 
 
-  <dialog id="backup-dialog">
-    <form method="dialog">
-      <div class="dialog-header"><div><p class="eyebrow">BACKUP E RESTAURAÇÃO</p><h2>Transferir todos os dados</h2></div><button type="button" class="icon-button close-backup">×</button></div>
-      <div class="backup-grid">
-        <section class="backup-option"><h3>Download completo</h3><p class="muted">Baixe perfil, autoavaliações, planejamento, histórico, preferências e catálogo em um único arquivo JSON.</p><button type="button" id="download-full-backup" class="button primary">Baixar backup completo</button></section>
-        <section class="backup-option warning-box"><h3>Upload total</h3><p class="muted">O arquivo enviado substituirá todos os dados atualmente ativos neste navegador.</p><input id="full-backup-input" type="file" accept=".json" hidden><button type="button" id="upload-full-backup" class="button secondary">Selecionar backup</button></section>
+  <dialog id="competency-view-dialog">
+    <div class="competency-view-shell">
+      <div class="dialog-header">
+        <div><p class="eyebrow">VISUALIZAÇÃO DA COMPETÊNCIA</p><h2 id="competency-view-title"></h2></div>
+        <button type="button" class="icon-button close-competency-view">×</button>
       </div>
-    </form>
+      <div id="competency-view-content"></div>
+    </div>
   </dialog>
 
   <div id="toast" class="toast" role="status"></div>
