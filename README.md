@@ -64,3 +64,13 @@ Os dados pessoais ficam no navegador. O catálogo oficial está publicado em `da
 - Configurações centralizam tema, importação, download e restauração.
 - Evolução por categoria e níveis concluídos.
 - Heatmap com níveis oficiais nas colunas e títulos/descrições dos níveis nas células.
+
+
+## Novidades da V5
+
+- Favoritos por competência, com estrelas no Catálogo e em Trilhas.
+- Meu Mapa passa a exibir apenas Competências Favoritadas.
+- Botões compactos de limpeza de filtros com ícone de lixeira.
+- Em Trilhas, cada nível possui seu próprio botão para inclusão no Planejamento.
+- Heatmap com coluna Total contendo a nota de autoavaliação da competência.
+- Cards de categoria em Evolução calculados pela média das autoavaliações, em escala de 0 a 4.
