@@ -74,3 +74,14 @@ Os dados pessoais ficam no navegador. O catálogo oficial está publicado em `da
 - Em Trilhas, cada nível possui seu próprio botão para inclusão no Planejamento.
 - Heatmap com coluna Total contendo a nota de autoavaliação da competência.
 - Cards de categoria em Evolução calculados pela média das autoavaliações, em escala de 0 a 4.
+
+
+## Novidades da V6
+
+- Filtros reimplementados com atualização automática da página.
+- Botões Limpar removidos.
+- Navegação por qualquer card de competência abre o Catálogo mostrando somente a competência selecionada.
+- Heatmap sem coluna Total e com Categoria antes de Competência.
+- Indicadores de média de autoavaliação por categoria adicionados ao Heatmap.
+- Evolução recebeu calendário mensal de cursos planejados e concluídos.
+- Campo Status do planejamento recebeu destaque visual.
